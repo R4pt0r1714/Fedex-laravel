@@ -1,0 +1,13 @@
+{
+    "name": "r4pt01714/fedex-laravel",
+    "description": "A Fedex api implementatio for laravel",
+    "type": "library",
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "R4pt0r1714",
+            "email": "javer.vazquez@web-oons.com.mx"
+        }
+    ],
+    "require": {}
+}
