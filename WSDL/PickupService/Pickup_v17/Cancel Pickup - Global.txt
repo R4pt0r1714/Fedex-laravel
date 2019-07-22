@@ -1,0 +1,84 @@
+Cancel Pickup - Global
+
+Request:
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://fedex.com/ws/pickup/v17">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <CancelPickupRequest>
+         <WebAuthenticationDetail>
+  <ParentCredential>
+               <Key>INPUT YOUR INFORMATION</Key>
+               <Password>INPUT YOUR INFORMATION</Password>
+            </ParentCredential>
+            <UserCredential>
+               <Key>INPUT YOUR INFORMATION</Key>
+               <Password>INPUT YOUR INFORMATION</Password>
+            </UserCredential>
+         </WebAuthenticationDetail>
+         <ClientDetail>
+            <AccountNumber>INPUT YOUR INFORMATION</AccountNumber>
+            <MeterNumber>INPUT YOUR INFORMATION</MeterNumber>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>US</LocaleCode>
+            </Localization>
+         </ClientDetail>
+         <TransactionDetail>
+            <CustomerTransactionId>v17 CancelPickup_ExpUS</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>US</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>disp</ServiceId>
+            <Major>17</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <CarrierCode>FDXE</CarrierCode>
+         <PickupConfirmationNumber>INPUT YOUR INFORMATION</PickupConfirmationNumber>
+         <ScheduledDate>${=  String.format('%tF', new Date() )}</ScheduledDate>
+         <Location>NQAA</Location>
+         <Remarks>Preet</Remarks>
+         <Reason>TXT</Reason>
+         <ContactName>Radhika</ContactName>
+      </CancelPickupRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+
+Response:
+
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <CancelPickupReply xmlns="http://fedex.com/ws/pickup/v17">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>disp</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>v17 CancelPickup_ExpUS</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>US</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>disp</ServiceId>
+            <Major>17</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+      </CancelPickupReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

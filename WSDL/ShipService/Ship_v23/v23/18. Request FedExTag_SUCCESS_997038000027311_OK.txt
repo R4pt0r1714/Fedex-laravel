@@ -1,0 +1,219 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v23="http://fedex.com/ws/ship/v23">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v23:ProcessTagRequest>
+          <v23:WebAuthenticationDetail>
+            <v23:ParentCredential>
+               <v23:Key>INPUT YOUR INFORMATION</v23:Key>
+               <v23:Password>INPUT YOUR INFORMATION</v23:Password>
+            </v23:ParentCredential>
+            <v23:UserCredential>
+               <v23:Key>INPUT YOUR INFORMATION</v23:Key>
+               <v23:Password>INPUT YOUR INFORMATION</v23:Password>
+            </v23:UserCredential>
+         </v23:WebAuthenticationDetail>
+         <v23:ClientDetail>
+            <v23:AccountNumber>INPUT YOUR INFORMATION</v23:AccountNumber>
+            <v23:MeterNumber>INPUT YOUR INFORMATION</v23:MeterNumber>
+         </v23:ClientDetail>
+         <v23:TransactionDetail>
+            <v23:CustomerTransactionId>TC03_ProcessTagRequest_v23</v23:CustomerTransactionId>
+         </v23:TransactionDetail>
+         <v23:Version>
+            <v23:ServiceId>ship</v23:ServiceId>
+            <v23:Major>23</v23:Major>
+            <v23:Intermediate>0</v23:Intermediate>
+            <v23:Minor>0</v23:Minor>
+         </v23:Version>
+         <v23:RequestedShipment>
+            <v23:ShipTimestamp>2017-12-15T09:30:47-07:00</v23:ShipTimestamp>
+            <v23:DropoffType>REGULAR_PICKUP</v23:DropoffType>
+            <v23:ServiceType>FEDEX_GROUND</v23:ServiceType>
+            <v23:PackagingType>YOUR_PACKAGING</v23:PackagingType>
+            <v23:TotalWeight>
+               <v23:Units>LB</v23:Units>
+               <v23:Value>149.0</v23:Value>
+            </v23:TotalWeight>
+            <v23:TotalInsuredValue>
+               <v23:Currency>USD</v23:Currency>
+               <v23:Amount>100.00</v23:Amount>
+            </v23:TotalInsuredValue>
+            <v23:Shipper>
+               <v23:Contact>
+                  <v23:PersonName>INPUT YOUR INFORMATION</v23:PersonName>
+                  <v23:CompanyName>INPUT YOUR INFORMATION</v23:CompanyName>
+                  <v23:PhoneNumber>INPUT YOUR INFORMATION</v23:PhoneNumber>
+               </v23:Contact>
+               <v23:Address>
+                  <v23:StreetLines>INPUT YOUR INFORMATION</v23:StreetLines>
+                  <v23:City>MEMPHIS</v23:City>
+                  <v23:StateOrProvinceCode>TN</v23:StateOrProvinceCode>
+                  <v23:PostalCode>38101</v23:PostalCode>
+                  <v23:CountryCode>US</v23:CountryCode>
+               </v23:Address>
+            </v23:Shipper>
+            <v23:Recipient>
+               <v23:Contact>
+                  <v23:PersonName>INPUT YOUR INFORMATION</v23:PersonName>
+                  <v23:CompanyName>INPUT YOUR INFORMATION</v23:CompanyName>
+                  <v23:PhoneNumber>INPUT YOUR INFORMATION</v23:PhoneNumber>
+               </v23:Contact>
+               <v23:Address>
+                  <v23:StreetLines>INPUT YOUR INFORMATION</v23:StreetLines>
+                  <v23:City>Memphis</v23:City>
+                  <v23:StateOrProvinceCode>TN</v23:StateOrProvinceCode>
+                  <v23:PostalCode>38018</v23:PostalCode>
+                  <v23:CountryCode>US</v23:CountryCode>
+               </v23:Address>
+            </v23:Recipient>
+            <v23:ShippingChargesPayment>
+               <v23:PaymentType>SENDER</v23:PaymentType>
+               <v23:Payor>
+                  <v23:ResponsibleParty>
+                     <v23:AccountNumber>150067600</v23:AccountNumber>
+                     <v23:Contact>
+                        <v23:ContactId/>
+                        <v23:PersonName/>
+                        <v23:CompanyName/>
+                        <v23:PhoneNumber/>
+                        <v23:EMailAddress/>
+                     </v23:Contact>
+                  </v23:ResponsibleParty>
+               </v23:Payor>
+            </v23:ShippingChargesPayment>
+            <v23:SpecialServicesRequested>
+               <v23:SpecialServiceTypes>RETURN_SHIPMENT</v23:SpecialServiceTypes>
+               <v23:ReturnShipmentDetail>
+                  <v23:ReturnType>FEDEX_TAG</v23:ReturnType>
+               </v23:ReturnShipmentDetail>
+            </v23:SpecialServicesRequested>
+            <v23:CustomsClearanceDetail>
+               <v23:DutiesPayment>
+                  <v23:PaymentType>SENDER</v23:PaymentType>
+                  <v23:Payor>
+                     <v23:ResponsibleParty>
+                        <v23:AccountNumber>INPUT YOUR INFORMATION</v23:AccountNumber>
+                        <v23:Tins>
+                           <v23:TinType>BUSINESS_STATE</v23:TinType>
+                           <v23:Number>213456</v23:Number>
+                        </v23:Tins>
+                        <v23:Contact>
+                           <v23:ContactId>12345</v23:ContactId>
+                           <v23:PersonName>INPUT YOUR INFORMATION</v23:PersonName>
+                        </v23:Contact>
+                     </v23:ResponsibleParty>
+                  </v23:Payor>
+               </v23:DutiesPayment>
+               <v23:DocumentContent>DOCUMENTS_ONLY</v23:DocumentContent>
+               <v23:CustomsValue>
+                  <v23:Currency>USD</v23:Currency>
+                  <v23:Amount>100.00</v23:Amount>
+               </v23:CustomsValue>
+               <v23:Commodities>
+                  <v23:NumberOfPieces>1</v23:NumberOfPieces>
+                  <v23:Description>ABCD</v23:Description>
+                  <v23:CountryOfManufacture>US</v23:CountryOfManufacture>
+                  <v23:Weight>
+                     <v23:Units>LB</v23:Units>
+                     <v23:Value>1.0</v23:Value>
+                  </v23:Weight>
+                  <v23:Quantity>1</v23:Quantity>
+                  <v23:QuantityUnits>cm</v23:QuantityUnits>
+                  <v23:UnitPrice>
+                     <v23:Currency>USD</v23:Currency>
+                     <v23:Amount>1.000000</v23:Amount>
+                  </v23:UnitPrice>
+                  <v23:CustomsValue>
+                     <v23:Currency>USD</v23:Currency>
+                     <v23:Amount>100.000000</v23:Amount>
+                  </v23:CustomsValue>
+               </v23:Commodities>
+               <v23:ExportDetail>
+                  <v23:ExportComplianceStatement>30.37(f)</v23:ExportComplianceStatement>
+               </v23:ExportDetail>
+            </v23:CustomsClearanceDetail>
+            <v23:PickupDetail>
+               <v23:ReadyDateTime>2017-12-15T09:30:47-07:00</v23:ReadyDateTime>
+               <v23:LatestPickupDateTime>2017-12-15T09:30:47-07:00</v23:LatestPickupDateTime>
+               <v23:CourierInstructions>HandleWithCare</v23:CourierInstructions>
+            </v23:PickupDetail>
+            <v23:LabelSpecification>
+               <v23:LabelFormatType>COMMON2D</v23:LabelFormatType>
+               <v23:ImageType>PDF</v23:ImageType>
+               <v23:LabelStockType>PAPER_4X6.75</v23:LabelStockType>
+               <v23:LabelPrintingOrientation>BOTTOM_EDGE_OF_TEXT_FIRST</v23:LabelPrintingOrientation>
+            </v23:LabelSpecification>
+            <v23:RateRequestTypes>LIST</v23:RateRequestTypes>
+            <v23:PackageCount>1</v23:PackageCount>
+            <v23:RequestedPackageLineItems>
+               <v23:SequenceNumber>1</v23:SequenceNumber>
+               <v23:InsuredValue>
+                  <v23:Currency>USD</v23:Currency>
+                  <v23:Amount>100.00</v23:Amount>
+               </v23:InsuredValue>
+               <v23:Weight>
+                  <v23:Units>LB</v23:Units>
+                  <v23:Value>50.00</v23:Value>
+               </v23:Weight>
+               <v23:ItemDescription>String</v23:ItemDescription>
+               <v23:CustomerReferences>
+                  <v23:CustomerReferenceType>CUSTOMER_REFERENCE</v23:CustomerReferenceType>
+                  <v23:Value>tot annos</v23:Value>
+               </v23:CustomerReferences>
+            </v23:RequestedPackageLineItems>
+         </v23:RequestedShipment>
+      </v23:ProcessTagRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ProcessTagReply xmlns="http://fedex.com/ws/ship/v23">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>ship</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>TC03_ProcessTagRequest_v23</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>ship</ServiceId>
+            <Major>23</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <CompletedShipmentDetail>
+            <UsDomestic>true</UsDomestic>
+            <MasterTrackingId>
+               <TrackingIdType>GROUND</TrackingIdType>
+               <TrackingNumber>997038000027311</TrackingNumber>
+            </MasterTrackingId>
+            <TagDetail>
+               <ConfirmationNumber>997038000027311</ConfirmationNumber>
+            </TagDetail>
+            <CompletedPackageDetails>
+               <SequenceNumber>1</SequenceNumber>
+               <TrackingIds>
+                  <TrackingIdType>GROUND</TrackingIdType>
+                  <TrackingNumber>997038000027311</TrackingNumber>
+               </TrackingIds>
+               <GroupNumber>0</GroupNumber>
+            </CompletedPackageDetails>
+         </CompletedShipmentDetail>
+      </ProcessTagReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Additional Info:
+URL:https://wsdrt.idev.fedex.com:443/web-services
+Date:Thu Dec 14 19:50:07 IST 2017
+TimeTaken:2360ms

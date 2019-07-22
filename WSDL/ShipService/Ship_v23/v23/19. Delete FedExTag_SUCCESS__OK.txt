@@ -1,0 +1,95 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v23="http://fedex.com/ws/ship/v23">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v23:DeleteTagRequest>
+         <v23:WebAuthenticationDetail>
+            <v23:ParentCredential>
+               <v23:Key>INPUT YOUR INFORMATION</v23:Key>
+               <v23:Password>INPUT YOUR INFORMATION</v23:Password>
+            </v23:ParentCredential>
+            <v23:UserCredential>
+               <v23:Key>INPUT YOUR INFORMATION</v23:Key>
+               <v23:Password>INPUT YOUR INFORMATION</v23:Password>
+            </v23:UserCredential>
+         </v23:WebAuthenticationDetail>
+         <v23:ClientDetail>
+            <v23:AccountNumber>INPUT YOUR INFORMATION</v23:AccountNumber>
+            <v23:MeterNumber>INPUT YOUR INFORMATION</v23:MeterNumber>
+            <v23:IntegratorId>12345</v23:IntegratorId>
+            <v23:Localization>
+               <v23:LanguageCode>EN</v23:LanguageCode>
+               <v23:LocaleCode>ES</v23:LocaleCode>
+            </v23:Localization>
+         </v23:ClientDetail>
+         <v23:TransactionDetail>
+            <v23:CustomerTransactionId>v23_Delete Tag</v23:CustomerTransactionId>
+            <v23:Localization>
+               <v23:LanguageCode>EN</v23:LanguageCode>
+               <v23:LocaleCode>ES</v23:LocaleCode>
+            </v23:Localization>
+         </v23:TransactionDetail>
+         <v23:Version>
+            <v23:ServiceId>ship</v23:ServiceId>
+            <v23:Major>23</v23:Major>
+            <v23:Intermediate>0</v23:Intermediate>
+            <v23:Minor>0</v23:Minor>
+         </v23:Version>
+         <v23:DispatchLocationId>NQAA</v23:DispatchLocationId>
+         <v23:DispatchDate>2017-12-11</v23:DispatchDate>
+         <v23:Payment>
+            <v23:PaymentType>SENDER</v23:PaymentType>
+            <v23:Payor>
+                <v23:ResponsibleParty>
+                  <v23:AccountNumber>INPUT YOUR INFORMATION</v23:AccountNumber>
+                  <v23:Tins>
+                     <v23:TinType>BUSINESS_NATIONAL</v23:TinType>
+                     <v23:Number>123456</v23:Number>
+                  </v23:Tins>
+                  <v23:Contact>
+                     <v23:ContactId>123</v23:ContactId>
+                  </v23:Contact>
+               </v23:ResponsibleParty>
+            </v23:Payor>
+         </v23:Payment>
+         <v23:ConfirmationNumber>997038000027311</v23:ConfirmationNumber>
+      </v23:DeleteTagRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ShipmentReply xmlns="http://fedex.com/ws/ship/v23">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>ship</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>v23_Delete Tag</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>ES</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>ship</ServiceId>
+            <Major>23</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+      </ShipmentReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Additional Info:
+URL:https://wsdrt.idev.fedex.com:443/web-services
+Date:Thu Dec 14 19:50:07 IST 2017
+TimeTaken:2360ms

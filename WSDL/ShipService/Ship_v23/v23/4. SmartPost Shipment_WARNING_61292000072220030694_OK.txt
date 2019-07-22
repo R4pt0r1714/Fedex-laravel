@@ -1,0 +1,211 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v23="http://fedex.com/ws/ship/v23">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v23:ProcessShipmentRequest>
+         <v23:WebAuthenticationDetail>
+            <v23:ParentCredential>
+               <v23:Key>INPUT YOUR INFORMATION</v23:Key>
+               <v23:Password>INPUT YOUR INFORMATION</v23:Password>
+            </v23:ParentCredential>
+            <v23:UserCredential>
+               <v23:Key>INPUT YOUR INFORMATION</v23:Key>
+               <v23:Password>INPUT YOUR INFORMATION</v23:Password>
+            </v23:UserCredential>
+         </v23:WebAuthenticationDetail>
+         <v23:ClientDetail>
+            <v23:AccountNumber>INPUT YOUR INFORMATION</v23:AccountNumber>
+            <v23:MeterNumber>INPUT YOUR INFORMATION</v23:MeterNumber>
+         </v23:ClientDetail>
+         <v23:TransactionDetail>
+            <v23:CustomerTransactionId>TC062_SMART_POST with YourPackaging</v23:CustomerTransactionId>
+         </v23:TransactionDetail>
+         <v23:Version>
+            <v23:ServiceId>ship</v23:ServiceId>
+            <v23:Major>23</v23:Major>
+            <v23:Intermediate>0</v23:Intermediate>
+            <v23:Minor>0</v23:Minor>
+         </v23:Version>
+         <v23:RequestedShipment>
+            <v23:ShipTimestamp>2017-10-27T12:34:56-06:00</v23:ShipTimestamp>
+            <v23:DropoffType>REGULAR_PICKUP</v23:DropoffType>
+            <v23:ServiceType>SMART_POST</v23:ServiceType>
+            <v23:PackagingType>YOUR_PACKAGING</v23:PackagingType>
+            <v23:Shipper>
+               <v23:Contact>
+                  <v23:PersonName>INPUT YOUR INFORMATION</v23:PersonName>
+                  <v23:CompanyName>INPUT YOUR INFORMATION</v23:CompanyName>
+                  <v23:PhoneNumber>INPUT YOUR INFORMATION</v23:PhoneNumber>
+                  <v23:EMailAddress>INPUT YOUR INFORMATION</v23:EMailAddress>
+               </v23:Contact>
+               <v23:Address>
+                  <v23:StreetLines>INPUT YOUR INFORMATION</v23:StreetLines>
+                  <v23:StreetLines>INPUT YOUR INFORMATION</v23:StreetLines>
+                  <v23:City>MEMPHIS</v23:City>
+                  <v23:StateOrProvinceCode>TN</v23:StateOrProvinceCode>
+                  <v23:PostalCode>38101</v23:PostalCode>
+                  <v23:CountryCode>US</v23:CountryCode>
+               </v23:Address>
+            </v23:Shipper>
+            <v23:Recipient>
+               <v23:Contact>
+                  <v23:PersonName>INPUT YOUR INFORMATION</v23:PersonName>
+                  <v23:CompanyName>INPUT YOUR INFORMATION</v23:CompanyName>
+                  <v23:PhoneNumber>INPUT YOUR INFORMATION</v23:PhoneNumber>
+                  <v23:EMailAddress>INPUT YOUR INFORMATION</v23:EMailAddress>
+               </v23:Contact>
+               <v23:Address>
+                  <v23:StreetLines>INPUT YOUR INFORMATION</v23:StreetLines>
+                  <v23:StreetLines>INPUT YOUR INFORMATION</v23:StreetLines>
+                  <v23:City>KAHULUI</v23:City>
+                  <v23:StateOrProvinceCode>HI</v23:StateOrProvinceCode>
+                  <v23:PostalCode>96790</v23:PostalCode>
+                  <v23:CountryCode>US</v23:CountryCode>
+               </v23:Address>
+            </v23:Recipient>
+            <v23:ShippingChargesPayment>
+               <v23:PaymentType>SENDER</v23:PaymentType>
+               <v23:Payor>
+                  <v23:ResponsibleParty>
+                     <v23:AccountNumber>INPUT YOUR INFORMATION</v23:AccountNumber>
+                  </v23:ResponsibleParty>
+               </v23:Payor>
+            </v23:ShippingChargesPayment>
+            <v23:SmartPostDetail>
+               <v23:Indicia>PARCEL_SELECT</v23:Indicia>
+               <v23:AncillaryEndorsement>ADDRESS_CORRECTION</v23:AncillaryEndorsement>
+               <v23:HubId>5531</v23:HubId>
+            </v23:SmartPostDetail>
+            <v23:LabelSpecification>
+               <v23:LabelFormatType>COMMON2D</v23:LabelFormatType>
+               <v23:ImageType>PNG</v23:ImageType>
+            </v23:LabelSpecification>
+            <v23:RateRequestTypes>LIST</v23:RateRequestTypes>
+            <v23:PackageCount>1</v23:PackageCount>
+            <v23:RequestedPackageLineItems>
+               <v23:SequenceNumber>1</v23:SequenceNumber>
+               <v23:GroupPackageCount>1</v23:GroupPackageCount>
+               <v23:Weight>
+                  <v23:Units>LB</v23:Units>
+                  <v23:Value>20.0</v23:Value>
+               </v23:Weight>
+               <v23:Dimensions>
+                  <v23:Length>6</v23:Length>
+                  <v23:Width>4</v23:Width>
+                  <v23:Height>1</v23:Height>
+                  <v23:Units>IN</v23:Units>
+               </v23:Dimensions>
+               <v23:CustomerReferences>
+                  <v23:CustomerReferenceType>CUSTOMER_REFERENCE</v23:CustomerReferenceType>
+                  <v23:Value>TC001_01_PT1_ST01_PK01_SNDUS_RCPCA_POS</v23:Value>
+               </v23:CustomerReferences>
+            </v23:RequestedPackageLineItems>
+         </v23:RequestedShipment>
+      </v23:ProcessShipmentRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ProcessShipmentReply xmlns="http://fedex.com/ws/ship/v23">
+         <HighestSeverity>WARNING</HighestSeverity>
+         <Notifications>
+            <Severity>WARNING</Severity>
+            <Source>ship</Source>
+            <Code>2469</Code>
+            <Message>shipTimestamp is invalid</Message>
+            <LocalizedMessage>shipTimestamp is invalid</LocalizedMessage>
+         </Notifications>
+         <Notifications>
+            <Severity>WARNING</Severity>
+            <Source>ship</Source>
+            <Code>7000</Code>
+            <Message>Unable to obtain courtesy rates.</Message>
+            <LocalizedMessage>Unable to obtain courtesy rates.</LocalizedMessage>
+         </Notifications>
+         <Notifications>
+            <Severity>NOTE</Severity>
+            <Source>ship</Source>
+            <Code>2505</Code>
+            <Message>"USPS_DELIVERY_CONFIRMATION" was added to the smart post special services.</Message>
+            <LocalizedMessage>"USPS_DELIVERY_CONFIRMATION" was added to the smart post special services.</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>TC062_SMART_POST with YourPackaging</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>ship</ServiceId>
+            <Major>23</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <JobId>350e20a7e31760s025b3j222413</JobId>
+         <CompletedShipmentDetail>
+            <UsDomestic>true</UsDomestic>
+            <CarrierCode>FXSP</CarrierCode>
+            <MasterTrackingId>
+               <TrackingIdType>USPS</TrackingIdType>
+               <UspsApplicationId>92</UspsApplicationId>
+               <TrackingNumber>61292000072220030694</TrackingNumber>
+            </MasterTrackingId>
+            <ServiceTypeDescription>SMART POST</ServiceTypeDescription>
+            <ServiceDescription>
+               <ServiceType>SMART_POST</ServiceType>
+               <Description>Smart Post</Description>
+               <AstraDescription>SMART POST</AstraDescription>
+            </ServiceDescription>
+            <PackagingDescription>YOUR_PACKAGING</PackagingDescription>
+            <OperationalDetail>
+               <OriginLocationNumber>0</OriginLocationNumber>
+               <DestinationLocationNumber>0</DestinationLocationNumber>
+               <TransitTime>TWO_DAYS</TransitTime>
+               <MaximumTransitTime>SEVEN_DAYS</MaximumTransitTime>
+               <IneligibleForMoneyBackGuarantee>false</IneligibleForMoneyBackGuarantee>
+            </OperationalDetail>
+            <SmartPostDetail>
+               <PickUpCarrier>FDXG</PickUpCarrier>
+               <Machinable>true</Machinable>
+            </SmartPostDetail>
+            <CompletedPackageDetails>
+               <SequenceNumber>1</SequenceNumber>
+               <TrackingIds>
+                  <TrackingIdType>USPS</TrackingIdType>
+                  <UspsApplicationId>92</UspsApplicationId>
+                  <TrackingNumber>61292000072220030694</TrackingNumber>
+               </TrackingIds>
+               <GroupNumber>0</GroupNumber>
+               <OperationalDetail>
+                  <Barcodes>
+                     <StringBarcodes>
+                        <Type>USPS</Type>
+                        <Value>#42096790#9261292000072220030694</Value>
+                     </StringBarcodes>
+                  </Barcodes>
+                  <GroundServiceCode>913</GroundServiceCode>
+               </OperationalDetail>
+               <Label>
+                  <Type>OUTBOUND_LABEL</Type>
+                  <ShippingDocumentDisposition>RETURNED</ShippingDocumentDisposition>
+                  <ImageType>PNG</ImageType>
+                  <Resolution>200</Resolution>
+                  <CopiesToPrint>1</CopiesToPrint>
+                  <Parts>
+                     <DocumentPartSequenceNumber>1</DocumentPartSequenceNumber>
+                     <Image>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</Image>
+                  </Parts>
+               </Label>
+               <SignatureOption>SERVICE_DEFAULT</SignatureOption>
+            </CompletedPackageDetails>
+         </CompletedShipmentDetail>
+      </ProcessShipmentReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Additional Info:
+URL:https://wsdrt.idev.fedex.com:443/web-services
+Date:Thu Dec 14 19:50:07 IST 2017
+TimeTaken:2360ms

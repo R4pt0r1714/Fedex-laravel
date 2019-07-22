@@ -1,0 +1,625 @@
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <SOAP-ENV:Body>
+      <ProcessShipmentRequest xmlns="http://fedex.com/ws/ship/v23">
+        <WebAuthenticationDetail>
+            <ParentCredential>
+               <Key>INPUT YOUR INFORMATION</Key>
+               <Password>INPUT YOUR INFORMATION</Password>
+            </ParentCredential>
+            <UserCredential>
+               <Key>INPUT YOUR INFORMATION</Key>
+               <Password>INPUT YOUR INFORMATION</Password>
+            </UserCredential>
+         </WebAuthenticationDetail>
+         <ClientDetail>
+            <AccountNumber>INPUT YOUR INFORMATION</AccountNumber>
+            <MeterNumber>INPUT YOUR INFORMATION</MeterNumber>
+         </ClientDetail>
+         <TransactionDetail>
+            <CustomerTransactionId>Ship_International_basic</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>ship</ServiceId>
+            <Major>23</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <RequestedShipment>
+            <ShipTimestamp>2016-12-12T12:34:56-06:00</ShipTimestamp>
+            <DropoffType>REGULAR_PICKUP</DropoffType>
+            <ServiceType>PRIORITY_OVERNIGHT</ServiceType>
+            <PackagingType>YOUR_PACKAGING</PackagingType>
+            <Shipper>
+               <Contact>
+                  <PersonName>INPUT YOUR INFORMATION</PersonName>
+                  <CompanyName>INPUT YOUR INFORMATION</CompanyName>
+                  <PhoneNumber>INPUT YOUR INFORMATION</PhoneNumber>
+                  <EMailAddress>INPUT YOUR INFORMATION</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <City>MEMPHIS</City>
+                  <StateOrProvinceCode>TN</StateOrProvinceCode>
+                  <PostalCode>38117</PostalCode>
+                  <CountryCode>US</CountryCode>
+               </Address>
+            </Shipper>
+            <Recipient>
+               <Contact>
+                  <PersonName>INPUT YOUR INFORMATION</PersonName>
+                  <CompanyName>INPUT YOUR INFORMATION</CompanyName>
+                  <PhoneNumber>INPUT YOUR INFORMATION</PhoneNumber>
+                  <EMailAddress>INPUT YOUR INFORMATION</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <StreetLines>Input Your Information</StreetLines>
+                  <City>Collierville</City>
+                  <StateOrProvinceCode>TN</StateOrProvinceCode>
+                  <PostalCode>38017</PostalCode>
+                  <CountryCode>US</CountryCode>
+               </Address>
+            </Recipient>
+            <ShippingChargesPayment>
+               <PaymentType>SENDER</PaymentType>
+               <Payor>
+                  <ResponsibleParty>
+                     <AccountNumber>INPUT YOUR INFORMATION</AccountNumber>
+                     <Contact>
+                        <PersonName>INPUT YOUR INFORMATION</PersonName>
+                        <EMailAddress>INPUT YOUR INFORMATION</EMailAddress>
+                     </Contact>
+                  </ResponsibleParty>
+               </Payor>
+            </ShippingChargesPayment>
+            <SpecialServicesRequested>
+               <SpecialServiceTypes>HOLD_AT_LOCATION</SpecialServiceTypes>
+               <HoldAtLocationDetail>
+                  <PhoneNumber>INPUT YOUR INFORMATION</PhoneNumber>
+                  <LocationContactAndAddress>
+                     <Contact>
+                        <PersonName>INPUT YOUR INFORMATION</PersonName>
+                        <CompanyName>INPUT YOUR INFORMATION</CompanyName>
+                        <PhoneNumber>INPUT YOUR INFORMATION</PhoneNumber>
+                        <EMailAddress>INPUT YOUR INFORMATION</EMailAddress>
+                     </Contact>
+                     <Address>
+                        <StreetLines>Input Your Information</StreetLines>
+                        <StreetLines>Input Your Information</StreetLines>
+                        <City>Collierville</City>
+                        <StateOrProvinceCode>TN</StateOrProvinceCode>
+                        <PostalCode>38017</PostalCode>
+                        <CountryCode>US</CountryCode>
+                     </Address>
+                  </LocationContactAndAddress>
+                  <LocationType>FEDEX_EXPRESS_STATION</LocationType>
+               </HoldAtLocationDetail>
+            </SpecialServicesRequested>
+            <LabelSpecification>
+               <LabelFormatType>COMMON2D</LabelFormatType>
+               <ImageType>PNG</ImageType>
+            </LabelSpecification>
+            <RateRequestTypes>LIST</RateRequestTypes>
+            <PackageCount>1</PackageCount>
+            <RequestedPackageLineItems>
+               <SequenceNumber>1</SequenceNumber>
+               <Weight>
+                  <Units>LB</Units>
+                  <Value>40</Value>
+               </Weight>
+               <Dimensions>
+                  <Length>5</Length>
+                  <Width>5</Width>
+                  <Height>5</Height>
+                  <Units>IN</Units>
+               </Dimensions>
+               <PhysicalPackaging>BAG</PhysicalPackaging>
+               <ItemDescription>Book</ItemDescription>
+               <CustomerReferences>
+                  <CustomerReferenceType>CUSTOMER_REFERENCE</CustomerReferenceType>
+                  <Value>NAFTA_COO</Value>
+               </CustomerReferences>
+               <SpecialServicesRequested>
+                  <SpecialServiceTypes>SIGNATURE_OPTION</SpecialServiceTypes>
+                  <SignatureOptionDetail>
+                     <OptionType>ADULT</OptionType>
+                  </SignatureOptionDetail>
+               </SpecialServicesRequested>
+            </RequestedPackageLineItems>
+         </RequestedShipment>
+      </ProcessShipmentRequest>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ProcessShipmentReply xmlns="http://fedex.com/ws/ship/v23">
+         <HighestSeverity>WARNING</HighestSeverity>
+         <Notifications>
+            <Severity>WARNING</Severity>
+            <Source>ship</Source>
+            <Code>2469</Code>
+            <Message>shipTimestamp is invalid</Message>
+            <LocalizedMessage>shipTimestamp is invalid</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>Ship_International_basic</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>ship</ServiceId>
+            <Major>23</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <JobId>350e20a7e31760s025b3j222420</JobId>
+         <CompletedShipmentDetail>
+            <UsDomestic>true</UsDomestic>
+            <CarrierCode>FDXE</CarrierCode>
+            <MasterTrackingId>
+               <TrackingIdType>FEDEX</TrackingIdType>
+               <FormId>0201</FormId>
+               <TrackingNumber>794909387954</TrackingNumber>
+            </MasterTrackingId>
+            <ServiceTypeDescription>P1</ServiceTypeDescription>
+            <ServiceDescription>
+               <ServiceType>PRIORITY_OVERNIGHT</ServiceType>
+               <Code>01</Code>
+               <Names>
+                  <Type>abbrv</Type>
+                  <Encoding>utf-8</Encoding>
+                  <Value>PO</Value>
+               </Names>
+               <Names>
+                  <Type>long</Type>
+                  <Encoding>utf-8</Encoding>
+                  <Value>FedEx Priority Overnight®</Value>
+               </Names>
+               <Names>
+                  <Type>long</Type>
+                  <Encoding>ascii</Encoding>
+                  <Value>FedEx Priority Overnight</Value>
+               </Names>
+               <Names>
+                  <Type>medium</Type>
+                  <Encoding>utf-8</Encoding>
+                  <Value>FedEx Priority Overnight®</Value>
+               </Names>
+               <Names>
+                  <Type>medium</Type>
+                  <Encoding>ascii</Encoding>
+                  <Value>FedEx Priority Overnight</Value>
+               </Names>
+               <Names>
+                  <Type>short</Type>
+                  <Encoding>utf-8</Encoding>
+                  <Value>P-1</Value>
+               </Names>
+               <Names>
+                  <Type>short</Type>
+                  <Encoding>ascii</Encoding>
+                  <Value>P-1</Value>
+               </Names>
+               <Description>Priority Overnight</Description>
+               <AstraDescription>P1</AstraDescription>
+            </ServiceDescription>
+            <PackagingDescription>YOUR_PACKAGING</PackagingDescription>
+            <OperationalDetail>
+               <UrsaPrefixCode>XH</UrsaPrefixCode>
+               <UrsaSuffixCode>HKAA</UrsaSuffixCode>
+               <OriginLocationId>NQAA</OriginLocationId>
+               <OriginLocationNumber>0</OriginLocationNumber>
+               <OriginServiceArea>A1</OriginServiceArea>
+               <DestinationLocationId>HKAA</DestinationLocationId>
+               <DestinationLocationNumber>0</DestinationLocationNumber>
+               <DestinationServiceArea>A2</DestinationServiceArea>
+               <DestinationLocationStateOrProvinceCode>TN</DestinationLocationStateOrProvinceCode>
+               <DeliveryDate>2017-12-15</DeliveryDate>
+               <DeliveryDay>FRI</DeliveryDay>
+               <CommitDate>2017-12-15</CommitDate>
+               <CommitDay>FRI</CommitDay>
+               <IneligibleForMoneyBackGuarantee>false</IneligibleForMoneyBackGuarantee>
+               <AstraPlannedServiceLevel>FRI - 15 DEC HOLD</AstraPlannedServiceLevel>
+               <AstraDescription>PRIORITY OVERNIGHT</AstraDescription>
+               <PostalCode>38017</PostalCode>
+               <StateOrProvinceCode>TN</StateOrProvinceCode>
+               <CountryCode>US</CountryCode>
+               <AirportId>MEM</AirportId>
+               <ServiceCode>01</ServiceCode>
+               <PackagingCode>01</PackagingCode>
+            </OperationalDetail>
+            <ShipmentRating>
+               <ActualRateType>PAYOR_ACCOUNT_PACKAGE</ActualRateType>
+               <EffectiveNetDiscount>
+                  <Currency>USD</Currency>
+                  <Amount>0.0</Amount>
+               </EffectiveNetDiscount>
+               <ShipmentRateDetails>
+                  <RateType>PAYOR_ACCOUNT_PACKAGE</RateType>
+                  <RateScale>1486</RateScale>
+                  <RateZone>02</RateZone>
+                  <PricingCode>PACKAGE</PricingCode>
+                  <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+                  <DimDivisor>139</DimDivisor>
+                  <FuelSurchargePercent>6.0</FuelSurchargePercent>
+                  <TotalBillingWeight>
+                     <Units>LB</Units>
+                     <Value>40.0</Value>
+                  </TotalBillingWeight>
+                  <TotalBaseCharge>
+                     <Currency>USD</Currency>
+                     <Amount>89.84</Amount>
+                  </TotalBaseCharge>
+                  <TotalFreightDiscounts>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalFreightDiscounts>
+                  <TotalNetFreight>
+                     <Currency>USD</Currency>
+                     <Amount>89.84</Amount>
+                  </TotalNetFreight>
+                  <TotalSurcharges>
+                     <Currency>USD</Currency>
+                     <Amount>11.14</Amount>
+                  </TotalSurcharges>
+                  <TotalNetFedExCharge>
+                     <Currency>USD</Currency>
+                     <Amount>100.98</Amount>
+                  </TotalNetFedExCharge>
+                  <TotalTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalTaxes>
+                  <TotalNetCharge>
+                     <Currency>USD</Currency>
+                     <Amount>100.98</Amount>
+                  </TotalNetCharge>
+                  <TotalRebates>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalRebates>
+                  <TotalDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesAndTaxes>
+                  <TotalAncillaryFeesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalAncillaryFeesAndTaxes>
+                  <TotalDutiesTaxesAndFees>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesTaxesAndFees>
+                  <TotalNetChargeWithDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>100.98</Amount>
+                  </TotalNetChargeWithDutiesAndTaxes>
+                  <Surcharges>
+                     <SurchargeType>SIGNATURE_OPTION</SurchargeType>
+                     <Description>Adult signature required</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>5.75</Amount>
+                     </Amount>
+                  </Surcharges>
+                  <Surcharges>
+                     <SurchargeType>FUEL</SurchargeType>
+                     <Description>Fuel</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>5.39</Amount>
+                     </Amount>
+                  </Surcharges>
+               </ShipmentRateDetails>
+               <ShipmentRateDetails>
+                  <RateType>PAYOR_LIST_PACKAGE</RateType>
+                  <RateScale>1486</RateScale>
+                  <RateZone>02</RateZone>
+                  <PricingCode>PACKAGE</PricingCode>
+                  <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+                  <DimDivisor>139</DimDivisor>
+                  <FuelSurchargePercent>6.0</FuelSurchargePercent>
+                  <TotalBillingWeight>
+                     <Units>LB</Units>
+                     <Value>40.0</Value>
+                  </TotalBillingWeight>
+                  <TotalBaseCharge>
+                     <Currency>USD</Currency>
+                     <Amount>89.84</Amount>
+                  </TotalBaseCharge>
+                  <TotalFreightDiscounts>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalFreightDiscounts>
+                  <TotalNetFreight>
+                     <Currency>USD</Currency>
+                     <Amount>89.84</Amount>
+                  </TotalNetFreight>
+                  <TotalSurcharges>
+                     <Currency>USD</Currency>
+                     <Amount>11.14</Amount>
+                  </TotalSurcharges>
+                  <TotalNetFedExCharge>
+                     <Currency>USD</Currency>
+                     <Amount>100.98</Amount>
+                  </TotalNetFedExCharge>
+                  <TotalTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalTaxes>
+                  <TotalNetCharge>
+                     <Currency>USD</Currency>
+                     <Amount>100.98</Amount>
+                  </TotalNetCharge>
+                  <TotalRebates>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalRebates>
+                  <TotalDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesAndTaxes>
+                  <TotalAncillaryFeesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalAncillaryFeesAndTaxes>
+                  <TotalDutiesTaxesAndFees>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesTaxesAndFees>
+                  <TotalNetChargeWithDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>100.98</Amount>
+                  </TotalNetChargeWithDutiesAndTaxes>
+                  <Surcharges>
+                     <SurchargeType>SIGNATURE_OPTION</SurchargeType>
+                     <Description>Adult signature required</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>5.75</Amount>
+                     </Amount>
+                  </Surcharges>
+                  <Surcharges>
+                     <SurchargeType>FUEL</SurchargeType>
+                     <Description>Fuel</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>5.39</Amount>
+                     </Amount>
+                  </Surcharges>
+               </ShipmentRateDetails>
+            </ShipmentRating>
+            <CompletedHoldAtLocationDetail>
+               <HoldingLocation>
+                  <Contact>
+                     <PersonName>Urvi</PersonName>
+                     <CompanyName>CSCSWAPI-WBUS1100</CompanyName>
+                     <PhoneNumber>9018549236</PhoneNumber>
+                     <EMailAddress>recipient@yahoo.com</EMailAddress>
+                  </Contact>
+                  <Address>
+                     <StreetLines>Input Your Information</StreetLines>
+                     <StreetLines>Input Your Information</StreetLines>
+                     <City>Collierville</City>
+                     <StateOrProvinceCode>TN</StateOrProvinceCode>
+                     <PostalCode>38017</PostalCode>
+                     <CountryCode>US</CountryCode>
+                     <Residential>false</Residential>
+                  </Address>
+               </HoldingLocation>
+               <HoldingLocationType>FEDEX_EXPRESS_STATION</HoldingLocationType>
+            </CompletedHoldAtLocationDetail>
+            <CompletedPackageDetails>
+               <SequenceNumber>1</SequenceNumber>
+               <TrackingIds>
+                  <TrackingIdType>FEDEX</TrackingIdType>
+                  <FormId>0201</FormId>
+                  <TrackingNumber>794909387954</TrackingNumber>
+               </TrackingIds>
+               <GroupNumber>0</GroupNumber>
+               <PackageRating>
+                  <ActualRateType>PAYOR_ACCOUNT_PACKAGE</ActualRateType>
+                  <EffectiveNetDiscount>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </EffectiveNetDiscount>
+                  <PackageRateDetails>
+                     <RateType>PAYOR_ACCOUNT_PACKAGE</RateType>
+                     <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+                     <BillingWeight>
+                        <Units>LB</Units>
+                        <Value>40.0</Value>
+                     </BillingWeight>
+                     <BaseCharge>
+                        <Currency>USD</Currency>
+                        <Amount>89.84</Amount>
+                     </BaseCharge>
+                     <TotalFreightDiscounts>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalFreightDiscounts>
+                     <NetFreight>
+                        <Currency>USD</Currency>
+                        <Amount>89.84</Amount>
+                     </NetFreight>
+                     <TotalSurcharges>
+                        <Currency>USD</Currency>
+                        <Amount>11.14</Amount>
+                     </TotalSurcharges>
+                     <NetFedExCharge>
+                        <Currency>USD</Currency>
+                        <Amount>100.98</Amount>
+                     </NetFedExCharge>
+                     <TotalTaxes>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalTaxes>
+                     <NetCharge>
+                        <Currency>USD</Currency>
+                        <Amount>100.98</Amount>
+                     </NetCharge>
+                     <TotalRebates>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalRebates>
+                     <Surcharges>
+                        <SurchargeType>SIGNATURE_OPTION</SurchargeType>
+                        <Description>Adult signature required</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>5.75</Amount>
+                        </Amount>
+                     </Surcharges>
+                     <Surcharges>
+                        <SurchargeType>FUEL</SurchargeType>
+                        <Description>Fuel</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>5.39</Amount>
+                        </Amount>
+                     </Surcharges>
+                  </PackageRateDetails>
+                  <PackageRateDetails>
+                     <RateType>PAYOR_LIST_PACKAGE</RateType>
+                     <RatedWeightMethod>ACTUAL</RatedWeightMethod>
+                     <BillingWeight>
+                        <Units>LB</Units>
+                        <Value>40.0</Value>
+                     </BillingWeight>
+                     <BaseCharge>
+                        <Currency>USD</Currency>
+                        <Amount>89.84</Amount>
+                     </BaseCharge>
+                     <TotalFreightDiscounts>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalFreightDiscounts>
+                     <NetFreight>
+                        <Currency>USD</Currency>
+                        <Amount>89.84</Amount>
+                     </NetFreight>
+                     <TotalSurcharges>
+                        <Currency>USD</Currency>
+                        <Amount>11.14</Amount>
+                     </TotalSurcharges>
+                     <NetFedExCharge>
+                        <Currency>USD</Currency>
+                        <Amount>100.98</Amount>
+                     </NetFedExCharge>
+                     <TotalTaxes>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalTaxes>
+                     <NetCharge>
+                        <Currency>USD</Currency>
+                        <Amount>100.98</Amount>
+                     </NetCharge>
+                     <TotalRebates>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalRebates>
+                     <Surcharges>
+                        <SurchargeType>SIGNATURE_OPTION</SurchargeType>
+                        <Description>Adult signature required</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>5.75</Amount>
+                        </Amount>
+                     </Surcharges>
+                     <Surcharges>
+                        <SurchargeType>FUEL</SurchargeType>
+                        <Description>Fuel</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>5.39</Amount>
+                        </Amount>
+                     </Surcharges>
+                  </PackageRateDetails>
+               </PackageRating>
+               <OperationalDetail>
+                  <AstraHandlingText>ASR HLD</AstraHandlingText>
+                  <OperationalInstructions>
+                     <Number>2</Number>
+                     <Content>TRK#</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>3</Number>
+                     <Content>0201</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>5</Number>
+                     <Content>XH HKAA</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>7</Number>
+                     <Content>1001891132110003801700794909387954</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>8</Number>
+                     <Content>552J1/3564/DCA5</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>10</Number>
+                     <Content>7949 0938 7954</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>12</Number>
+                     <Content>FRI - 15 DEC HOLD</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>13</Number>
+                     <Content>PRIORITY OVERNIGHT</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>14</Number>
+                     <Content>ASR HLD</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>15</Number>
+                     <Content>38017</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>16</Number>
+                     <Content>TN-US</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>17</Number>
+                     <Content>MEM</Content>
+                  </OperationalInstructions>
+                  <Barcodes>
+                     <BinaryBarcodes>
+                        <Type>COMMON_2D</Type>
+                        <Value>Wyk+HjAxHTAyMzgwMTcdODQwHTAxHTc5NDkwOTM4Nzk1NDAyMDEdRkRFHTE1MDA2NzYwMB0zNDgdHTEvMR00MC4wMExCHU4dSW5wdXQgWW91ciBJbmZvcm1hdGlvbh1Db2xsaWVydmlsbGUdVE4dVXJ2aR4wNh0xMFpFRDAwNx0xMVpGZWRFeCBFeHByZXNzIFNoaXAgQ2VudGVyHTEyWjkwMTg1NDkyMzYdMTRaSW5wdXQgWW91ciBJbmZvcm1hdGlvbh0xNVo3MDAzMDQzHTIwWhwdMzFaMTAwMTg5MTEzMjExMDAwMzgwMTcwMDc5NDkwOTM4Nzk1NB0zMlowMTM1HTM0WjAxHTM5Wk5RQUEdHjA5HUZEWB16HTgdU1b9yq6cAkAeBA==</Value>
+                     </BinaryBarcodes>
+                     <StringBarcodes>
+                        <Type>FEDEX_1D</Type>
+                        <Value>1001891132110003801700794909387954</Value>
+                     </StringBarcodes>
+                  </Barcodes>
+               </OperationalDetail>
+               <Label>
+                  <Type>OUTBOUND_LABEL</Type>
+                  <ShippingDocumentDisposition>RETURNED</ShippingDocumentDisposition>
+                  <ImageType>PNG</ImageType>
+                  <Resolution>200</Resolution>
+                  <CopiesToPrint>1</CopiesToPrint>
+                  <Parts>
+                     <DocumentPartSequenceNumber>1</DocumentPartSequenceNumber>
+                     <Image>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</Image>
+                  </Parts>
+               </Label>
+               <SignatureOption>ADULT</SignatureOption>
+            </CompletedPackageDetails>
+         </CompletedShipmentDetail>
+      </ProcessShipmentReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Additional Info:
+URL:https://wsdrt.idev.fedex.com:443/web-services
+Date:Thu Dec 14 19:50:07 IST 2017
+TimeTaken:2360ms

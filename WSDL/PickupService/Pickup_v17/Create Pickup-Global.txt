@@ -1,0 +1,121 @@
+Create Pickup-Global  Request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://fedex.com/ws/pickup/v17">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <CreatePickupRequest>
+         <WebAuthenticationDetail>
+            <ParentCredential>
+               <Key>INPUT YOUR INFORMATION</Key>
+               <Password>INPUT YOUR INFORMATION</Password>
+            </ParentCredential>
+            <UserCredential>
+               <Key>INPUT YOUR INFORMATION</Key>
+               <Password>INPUT YOUR INFORMATION</Password>
+            </UserCredential>
+         </WebAuthenticationDetail>
+         <ClientDetail>
+            <AccountNumber>INPUT YOUR INFORMATION</AccountNumber>
+            <MeterNumber>INPUT YOUR INFORMATION</MeterNumber>
+            <IntegratorId>12345</IntegratorId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>ES</LocaleCode>
+            </Localization>
+         </ClientDetail>
+         <TransactionDetail>
+            <CustomerTransactionId>CreatePickupRequest_v17</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>ES</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>disp</ServiceId>
+            <Major>17</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <AssociatedAccountNumber>
+            <Type>FEDEX_EXPRESS</Type>
+            <AccountNumber>INPUT YOUR INFORMATION</AccountNumber>
+         </AssociatedAccountNumber>
+         <OriginDetail>
+            <PickupLocation>
+               <Contact>
+                  <ContactId>KR1059</ContactId>
+                  <PersonName>INPUT YOUR INFORMATION</PersonName>
+                  <Title>Mr.</Title>
+                  <CompanyName>DEOYAROHIT0905$</CompanyName>
+                  <PhoneNumber>INPUT YOUR INFORMATION</PhoneNumber>
+                  <PhoneExtension>INPUT YOUR INFORMATION</PhoneExtension>
+                  <PagerNumber>9962308621</PagerNumber>
+                  <FaxNumber>9962308621</FaxNumber>
+                  <EMailAddress>kaustubha_ramdasi@syntelinc.com</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>INPUT YOUR INFORMATION</StreetLines>
+                  <StreetLines>INPUT YOUR INFORMATION</StreetLines>
+                  <StreetLines>INPUT YOUR INFORMATION</StreetLines>
+                  <City>Memphis</City>
+                  <StateOrProvinceCode>TN</StateOrProvinceCode>
+                  <PostalCode>38125</PostalCode>
+                  <CountryCode>US</CountryCode>
+               </Address>
+            </PickupLocation>
+            <PackageLocation>FRONT</PackageLocation>
+            <BuildingPart>DEPARTMENT</BuildingPart>
+            <BuildingPartDescription>BuildingPartDescription</BuildingPartDescription>
+            <ReadyTimestamp>${=String.format('%tF', new Date())}T12:34:56-06:00</ReadyTimestamp>
+            <CompanyCloseTime>19:00:00</CompanyCloseTime>
+            <Location>NQAA</Location>
+            <SuppliesRequested>SuppliesRequested</SuppliesRequested>
+         </OriginDetail>
+         <PackageCount>1</PackageCount>
+         <TotalWeight>
+            <Units>LB</Units>
+            <Value>50.0</Value>
+         </TotalWeight>
+         <CarrierCode>FDXE</CarrierCode>
+         <OversizePackageCount>0</OversizePackageCount>
+         <Remarks>Remarks</Remarks>
+         <CommodityDescription>TEST ENVIRONMENT - PLEASE DO NOT PROCESS PICKUP</CommodityDescription>
+         <CountryRelationship>DOMESTIC</CountryRelationship>
+      </CreatePickupRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+  
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <CreatePickupReply xmlns="http://fedex.com/ws/pickup/v17">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>disp</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>CreatePickupRequest_v17</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>ES</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>disp</ServiceId>
+            <Major>17</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <PickupConfirmationNumber>INPUT YOUR INFORMATION</PickupConfirmationNumber>
+         <Location>NQAA</Location>
+      </CreatePickupReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

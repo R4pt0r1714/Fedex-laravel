@@ -1,0 +1,286 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v15="http://fedex.com/ws/openship/v15">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v15:RetrieveConsolidationRequest>
+         <v15:WebAuthenticationDetail>
+              <v15:ParentCredential>
+               <v15:Key>INPUT YOUR INFORMATION</v15:Key>
+               <v15:Password>INPUT YOUR INFORMATION</v15:Password>
+            </v15:ParentCredential>
+            <v15:UserCredential>
+               <v15:Key>INPUT YOUR INFORMATION</v15:Key>
+               <v15:Password>INPUT YOUR INFORMATION</v15:Password>
+            </v15:UserCredential>
+         </v15:WebAuthenticationDetail>
+         <v15:ClientDetail>
+            <v15:AccountNumber>INPUT YOUR INFORMATION</v15:AccountNumber>
+            <v15:MeterNumber>INPUT YOUR INFORMATION</v15:MeterNumber>
+         </v15:ClientDetail>
+         <v15:TransactionDetail>
+            <v15:CustomerTransactionId>RetrieveConsolidationRequest_v6</v15:CustomerTransactionId>
+            <v15:Localization>
+               <v15:LanguageCode>EN</v15:LanguageCode>
+               <v15:LocaleCode>en</v15:LocaleCode>
+            </v15:Localization>
+         </v15:TransactionDetail>
+         <v15:Version>
+            <v15:ServiceId>ship</v15:ServiceId>
+            <v15:Major>14</v15:Major>
+            <v15:Intermediate>0</v15:Intermediate>
+            <v15:Minor>0</v15:Minor>
+         </v15:Version>
+         <v15:ConsolidationKey>
+            <v15:Type>INTERNATIONAL_PRIORITY_DISTRIBUTION</v15:Type>
+            <v15:Index>index2625</v15:Index>
+            <v15:Date>2017-11-27</v15:Date>
+         </v15:ConsolidationKey>
+      </v15:RetrieveConsolidationRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <RetrieveConsolidationReply xmlns="http://fedex.com/ws/openship/v15">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>ship</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>RetrieveConsolidationRequest_v6</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>en</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>ship</ServiceId>
+            <Major>14</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <RequestedConsolidation>
+            <ConsolidationType>INTERNATIONAL_PRIORITY_DISTRIBUTION</ConsolidationType>
+            <ShipDate>2017-11-27</ShipDate>
+            <TrackingIds>
+               <TrackingIdType>FEDEX</TrackingIdType>
+               <FormId>0431</FormId>
+               <TrackingNumber>794907175779</TrackingNumber>
+            </TrackingIds>
+            <Shipper>
+               <AccountNumber>150067600</AccountNumber>
+               <Tins>
+                  <TinType>BUSINESS_NATIONAL</TinType>
+                  <Number>INDIVIDUAL</Number>
+               </Tins>
+               <Contact>
+                  <PersonName>AMAR</PersonName>
+                  <CompanyName>SYNTEL</CompanyName>
+                  <PhoneNumber>1234567890</PhoneNumber>
+                  <EMailAddress>Amarnadh_Chennmsetti@syntelinc.com</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>2 INTERNATIONAL PL</StreetLines>
+                  <StreetLines>IPD TESTING FXRS</StreetLines>
+                  <City>BOSTON</City>
+                  <StateOrProvinceCode>MA</StateOrProvinceCode>
+                  <PostalCode>02110</PostalCode>
+                  <CountryCode>US</CountryCode>
+                  <Residential>false</Residential>
+               </Address>
+            </Shipper>
+            <Origin>
+               <Contact>
+                  <PersonName>RAVI</PersonName>
+                  <CompanyName>SYNTEL</CompanyName>
+                  <PhoneNumber>7896543210</PhoneNumber>
+                  <EMailAddress>Ravikumar_Sharma@syntelinc.com</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>2 INTERNATIONAL PL</StreetLines>
+                  <StreetLines>IPD TESTING FXRS</StreetLines>
+                  <City>BOSTON</City>
+                  <StateOrProvinceCode>MA</StateOrProvinceCode>
+                  <PostalCode>02110</PostalCode>
+                  <CountryCode>US</CountryCode>
+                  <Residential>false</Residential>
+               </Address>
+            </Origin>
+            <SoldTo>
+               <AccountNumber>150067600</AccountNumber>
+               <Contact>
+                  <PersonName>SENDER</PersonName>
+                  <CompanyName>IBM</CompanyName>
+                  <PhoneNumber>9989742135</PhoneNumber>
+                  <EMailAddress>Swapnil_Ghadage@syntelinc.com</EMailAddress>
+               </Contact>
+               <Address>
+                  <StreetLines>645 RUE STINSON</StreetLines>
+                  <StreetLines>IDF/IPD</StreetLines>
+                  <City>VANCOUVER</City>
+                  <StateOrProvinceCode>BC</StateOrProvinceCode>
+                  <PostalCode>V9C4V5</PostalCode>
+                  <CountryCode>CA</CountryCode>
+                  <Residential>false</Residential>
+               </Address>
+            </SoldTo>
+            <BookingNumber>1234</BookingNumber>
+            <ConsolidationDataSources>
+               <Field>TOTAL_INSURANCE_CHARGES</Field>
+               <Source>CLIENT</Source>
+            </ConsolidationDataSources>
+            <CustomerReferences>
+               <CustomerReferenceType>CUSTOMER_REFERENCE</CustomerReferenceType>
+               <Value>abcfdggalkewgr</Value>
+            </CustomerReferences>
+            <LabelSpecification>
+               <LabelFormatType>COMMON2D</LabelFormatType>
+               <ImageType>PNG</ImageType>
+               <LabelStockType>PAPER_7X4.75</LabelStockType>
+            </LabelSpecification>
+            <InternationalDistributionDetail>
+               <DropoffType>REGULAR_PICKUP</DropoffType>
+               <TotalDimensions>
+                  <Length>12</Length>
+                  <Width>12</Width>
+                  <Height>12</Height>
+                  <Units>IN</Units>
+               </TotalDimensions>
+               <TotalInsuredValue>
+                  <Currency>USD</Currency>
+                  <Amount>100.0</Amount>
+               </TotalInsuredValue>
+               <UnitSystem>ENGLISH</UnitSystem>
+               <DeclarationCurrencies>
+                  <Value>CUSTOMS_VALUE</Value>
+                  <Currency>USD</Currency>
+               </DeclarationCurrencies>
+               <ClearanceFacilityLocationId>YMXI</ClearanceFacilityLocationId>
+            </InternationalDistributionDetail>
+            <CustomsClearanceDetail>
+               <CustomsOptions>
+                  <Type>OTHER</Type>
+                  <Description>Consolidatedproduct</Description>
+               </CustomsOptions>
+               <ImporterOfRecord>
+                  <AccountNumber>150067600</AccountNumber>
+                  <Contact>
+                     <PersonName>swapnil</PersonName>
+                     <CompanyName>Syntel</CompanyName>
+                     <PhoneNumber>9985621496</PhoneNumber>
+                     <EMailAddress>Swapnil_Ghadage@syntelinc.com</EMailAddress>
+                  </Contact>
+                  <Address>
+                     <StreetLines>645 RUE STINSON</StreetLines>
+                     <StreetLines>IDF/IPD</StreetLines>
+                     <City>SAINT-LAURENT</City>
+                     <StateOrProvinceCode>PQ</StateOrProvinceCode>
+                     <PostalCode>H4N2E1</PostalCode>
+                     <CountryCode>CA</CountryCode>
+                     <Residential>false</Residential>
+                  </Address>
+               </ImporterOfRecord>
+               <RecipientCustomsId>
+                  <Type>COMPANY</Type>
+                  <Value>125</Value>
+               </RecipientCustomsId>
+               <DutiesPayment>
+                  <PaymentType>SENDER</PaymentType>
+                  <Payor>
+                     <ResponsibleParty>
+                        <AccountNumber>150067600</AccountNumber>
+                        <Contact>
+                           <PersonName>Amarnadh</PersonName>
+                           <CompanyName>SYNTEL</CompanyName>
+                           <PhoneNumber>1234567890</PhoneNumber>
+                           <EMailAddress>Amarnadh_Chennmsetti@syntelinc.com</EMailAddress>
+                        </Contact>
+                        <Address>
+                           <StreetLines>2 INTERNATIONAL PL</StreetLines>
+                           <StreetLines>IPD TESTING FXRS</StreetLines>
+                           <City>BOSTON</City>
+                           <StateOrProvinceCode>MA</StateOrProvinceCode>
+                           <PostalCode>021104101</PostalCode>
+                           <CountryCode>US</CountryCode>
+                           <Residential>false</Residential>
+                        </Address>
+                     </ResponsibleParty>
+                  </Payor>
+               </DutiesPayment>
+               <DocumentContent>DOCUMENTS_ONLY</DocumentContent>
+               <CustomsValue>
+                  <Currency>USD</Currency>
+                  <Amount>1000.0</Amount>
+               </CustomsValue>
+               <InsuranceCharges>
+                  <Currency>USD</Currency>
+                  <Amount>1000.0</Amount>
+               </InsuranceCharges>
+               <PartiesToTransactionAreRelated>false</PartiesToTransactionAreRelated>
+               <CommercialInvoice>
+                  <TermsOfSale>DDP</TermsOfSale>
+               </CommercialInvoice>
+               <Commodities>
+                  <Name>product</Name>
+                  <NumberOfPieces>1</NumberOfPieces>
+                  <Description>product</Description>
+                  <CountryOfManufacture>US</CountryOfManufacture>
+                  <Weight>
+                     <Units>LB</Units>
+                     <Value>10.0</Value>
+                  </Weight>
+                  <Quantity>1.0</Quantity>
+                  <QuantityUnits>X</QuantityUnits>
+                  <UnitPrice>
+                     <Currency>USD</Currency>
+                     <Amount>1000.0</Amount>
+                  </UnitPrice>
+                  <CustomsValue>
+                     <Currency>USD</Currency>
+                     <Amount>1000.0</Amount>
+                  </CustomsValue>
+               </Commodities>
+               <ExportDetail>
+                  <ExportComplianceStatement>30.37(f)</ExportComplianceStatement>
+               </ExportDetail>
+            </CustomsClearanceDetail>
+            <ShippingChargesPayment>
+               <PaymentType>SENDER</PaymentType>
+               <Payor>
+                  <ResponsibleParty>
+                     <AccountNumber>150067600</AccountNumber>
+                     <Contact>
+                        <PersonName>Amar</PersonName>
+                        <CompanyName>Fedex</CompanyName>
+                        <PhoneNumber>1234567890</PhoneNumber>
+                        <EMailAddress>amar.ch@gmail.com</EMailAddress>
+                     </Contact>
+                     <Address>
+                        <StreetLines>2 INTERNATIONAL PL</StreetLines>
+                        <StreetLines>IPD TESTING FXRS</StreetLines>
+                        <City>BOSTON</City>
+                        <StateOrProvinceCode>MA</StateOrProvinceCode>
+                        <PostalCode>021104101</PostalCode>
+                        <CountryCode>US</CountryCode>
+                        <Residential>false</Residential>
+                     </Address>
+                  </ResponsibleParty>
+               </Payor>
+            </ShippingChargesPayment>
+         </RequestedConsolidation>
+      </RetrieveConsolidationReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Additional Info:
+URL:https://wsdrt.idev.fedex.com:443/web-services
+Date:Mon Nov 27 18:19:04 IST 2017
+TimeTaken:3214ms

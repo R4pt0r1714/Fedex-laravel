@@ -1,0 +1,747 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v23="http://fedex.com/ws/ship/v23">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v23:ProcessShipmentRequest>
+         <v23:WebAuthenticationDetail>
+            <v23:ParentCredential>
+               <v23:Key>INPUT YOUR INFORMATION</v23:Key>
+               <v23:Password>INPUT YOUR INFORMATION</v23:Password>
+            </v23:ParentCredential>
+            <v23:UserCredential>
+               <v23:Key>INPUT YOUR INFORMATION</v23:Key>
+               <v23:Password>INPUT YOUR INFORMATION</v23:Password>
+            </v23:UserCredential>
+         </v23:WebAuthenticationDetail>
+         <v23:ClientDetail>
+            <v23:AccountNumber>INPUT YOUR INFORMATION</v23:AccountNumber>
+            <v23:MeterNumber>INPUT YOUR INFORMATION</v23:MeterNumber>
+         </v23:ClientDetail>
+         <v23:TransactionDetail>
+            <v23:CustomerTransactionId>ProcessShip_Basic</v23:CustomerTransactionId>
+         </v23:TransactionDetail>
+         <v23:Version>
+            <v23:ServiceId>ship</v23:ServiceId>
+            <v23:Major>23</v23:Major>
+            <v23:Intermediate>0</v23:Intermediate>
+            <v23:Minor>0</v23:Minor>
+         </v23:Version>
+         <v23:RequestedShipment>
+            <v23:ShipTimestamp>2016-12-12T15:46:24-06:00</v23:ShipTimestamp>
+            <v23:DropoffType>REGULAR_PICKUP</v23:DropoffType>
+            <v23:ServiceType>FEDEX_GROUND</v23:ServiceType>
+            <v23:PackagingType>YOUR_PACKAGING</v23:PackagingType>
+            <v23:Shipper>
+               <v23:AccountNumber>INPUT YOUR INFORMATION</v23:AccountNumber>
+               <v23:Contact>
+                  <v23:PersonName>INPUT YOUR INFORMATION</v23:PersonName>
+                  <v23:CompanyName>INPUT YOUR INFORMATION</v23:CompanyName>
+                  <v23:PhoneNumber>INPUT YOUR INFORMATION</v23:PhoneNumber>
+                  <v23:EMailAddress>INPUT YOUR INFORMATION</v23:EMailAddress>
+               </v23:Contact>
+               <v23:Address>
+                  <v23:StreetLines>Input Your Information</v23:StreetLines>
+                  <v23:StreetLines>Input Your Information</v23:StreetLines>
+                  <v23:City>Pittsburgh</v23:City>
+                  <v23:StateOrProvinceCode>PA</v23:StateOrProvinceCode>
+                  <v23:PostalCode>15108</v23:PostalCode>
+                  <v23:CountryCode>US</v23:CountryCode>
+               </v23:Address>
+            </v23:Shipper>
+            <v23:Recipient>
+               <v23:Contact>
+                  <v23:PersonName>INPUT YOUR INFORMATION</v23:PersonName>
+                  <v23:CompanyName>INPUT YOUR INFORMATION</v23:CompanyName>
+                  <v23:PhoneNumber>INPUT YOUR INFORMATION</v23:PhoneNumber>
+                  <v23:EMailAddress>INPUT YOUR INFORMATION</v23:EMailAddress>
+               </v23:Contact>
+               <v23:Address>
+                  <v23:StreetLines>Input Your Information</v23:StreetLines>
+                  <v23:StreetLines>Input Your Information</v23:StreetLines>
+                  <v23:City>RECIPIENT CITY CAN20</v23:City>
+                  <v23:StateOrProvinceCode>ON</v23:StateOrProvinceCode>
+                  <v23:PostalCode>N1R7J5</v23:PostalCode>
+                  <v23:CountryCode>CA</v23:CountryCode>
+               </v23:Address>
+            </v23:Recipient>
+            <v23:Origin>
+               <v23:Contact>
+                  <v23:PersonName>INPUT YOUR INFORMATION</v23:PersonName>
+                  <v23:CompanyName>INPUT YOUR INFORMATION</v23:CompanyName>
+                  <v23:PhoneNumber>INPUT YOUR INFORMATION</v23:PhoneNumber>
+                  <v23:EMailAddress>INPUT YOUR INFORMATION</v23:EMailAddress>
+               </v23:Contact>
+               <v23:Address>
+                  <v23:StreetLines>Input Your Information</v23:StreetLines>
+                  <v23:StreetLines>Input Your Information</v23:StreetLines>
+                  <v23:City>Pittsburgh</v23:City>
+                  <v23:StateOrProvinceCode>PA</v23:StateOrProvinceCode>
+                  <v23:PostalCode>15108</v23:PostalCode>
+                  <v23:CountryCode>US</v23:CountryCode>
+               </v23:Address>
+            </v23:Origin>
+            <v23:ShippingChargesPayment>
+               <v23:PaymentType>SENDER</v23:PaymentType>
+               <v23:Payor>
+                  <v23:ResponsibleParty>
+                     <v23:AccountNumber>INPUT YOUR INFORMATION</v23:AccountNumber>
+                     <v23:Contact>
+                        <v23:PersonName>INPUT YOUR INFORMATION</v23:PersonName>
+                        <v23:CompanyName>INPUT YOUR INFORMATION</v23:CompanyName>
+                        <v23:PhoneNumber>INPUT YOUR INFORMATION</v23:PhoneNumber>
+                        <v23:EMailAddress>INPUT YOUR INFORMATION</v23:EMailAddress>
+                     </v23:Contact>
+                     <v23:Address>
+                        <v23:StreetLines>Input Your Information</v23:StreetLines>
+                        <v23:StreetLines>Input Your Information</v23:StreetLines>
+                        <v23:City>Pittsburgh</v23:City>
+                        <v23:StateOrProvinceCode>PA</v23:StateOrProvinceCode>
+                        <v23:PostalCode>15108</v23:PostalCode>
+                        <v23:CountryCode>US</v23:CountryCode>
+                     </v23:Address>
+                  </v23:ResponsibleParty>
+               </v23:Payor>
+            </v23:ShippingChargesPayment>
+            <v23:SpecialServicesRequested>
+               <v23:SpecialServiceTypes>ELECTRONIC_TRADE_DOCUMENTS</v23:SpecialServiceTypes>
+               <v23:EtdDetail>
+                  <v23:DocumentReferences>
+                     <v23:LineNumber>1</v23:LineNumber>
+                     <v23:CustomerReference>Customer_Reference1_For_DocumentReference</v23:CustomerReference>
+                     <v23:DocumentProducer>CUSTOMER</v23:DocumentProducer>
+                     <v23:DocumentType>CERTIFICATE_OF_ORIGIN</v23:DocumentType>
+                     <v23:DocumentId>090493e180f35658</v23:DocumentId>
+                     <v23:DocumentIdProducer>CUSTOMER</v23:DocumentIdProducer>
+                  </v23:DocumentReferences>
+               </v23:EtdDetail>
+            </v23:SpecialServicesRequested>
+            <v23:CustomsClearanceDetail>
+               <v23:ImporterOfRecord>
+                  <v23:AccountNumber>INPUT YOUR INFORMATION</v23:AccountNumber>
+                  <v23:Contact>
+                     <v23:PersonName>INPUT YOUR INFORMATION</v23:PersonName>
+                     <v23:CompanyName>INPUT YOUR INFORMATION</v23:CompanyName>
+                     <v23:PhoneNumber>INPUT YOUR INFORMATION</v23:PhoneNumber>
+                     <v23:EMailAddress>INPUT YOUR INFORMATION</v23:EMailAddress>
+                  </v23:Contact>
+                  <v23:Address>
+                     <v23:StreetLines>Input Your Information</v23:StreetLines>
+                     <v23:StreetLines>Input Your Information</v23:StreetLines>
+                     <v23:City>Pittsburgh</v23:City>
+                     <v23:StateOrProvinceCode>PA</v23:StateOrProvinceCode>
+                     <v23:PostalCode>15108</v23:PostalCode>
+                     <v23:CountryCode>US</v23:CountryCode>
+                  </v23:Address>
+               </v23:ImporterOfRecord>
+               <v23:DutiesPayment>
+                  <v23:PaymentType>SENDER</v23:PaymentType>
+                  <v23:Payor>
+                     <v23:ResponsibleParty>
+                        <v23:AccountNumber>INPUT YOUR INFORMATION</v23:AccountNumber>
+                        <v23:Contact>
+                           <v23:PersonName>Abhay</v23:PersonName>
+                           <v23:CompanyName>INPUT YOUR INFORMATION</v23:CompanyName>
+                           <v23:PhoneNumber>INPUT YOUR INFORMATION</v23:PhoneNumber>
+                           <v23:EMailAddress>INPUT YOUR INFORMATION</v23:EMailAddress>
+                        </v23:Contact>
+                        <v23:Address>
+                           <v23:StreetLines>Input Your Information</v23:StreetLines>
+                           <v23:StreetLines>Input Your Information</v23:StreetLines>
+                           <v23:City>Pittsburgh</v23:City>
+                           <v23:StateOrProvinceCode>PA</v23:StateOrProvinceCode>
+                           <v23:PostalCode>15108</v23:PostalCode>
+                           <v23:CountryCode>US</v23:CountryCode>
+                        </v23:Address>
+                     </v23:ResponsibleParty>
+                  </v23:Payor>
+               </v23:DutiesPayment>
+               <v23:DocumentContent>DOCUMENTS_ONLY</v23:DocumentContent>
+               <v23:CustomsValue>
+                  <v23:Currency>USD</v23:Currency>
+                  <v23:Amount>100</v23:Amount>
+               </v23:CustomsValue>
+               <v23:CommercialInvoice>
+                  <v23:Comments>GodKnows</v23:Comments>
+                  <v23:PaymentTerms>string</v23:PaymentTerms>
+                  <v23:CustomerReferences>
+                     <v23:CustomerReferenceType>CUSTOMER_REFERENCE</v23:CustomerReferenceType>
+                     <v23:Value>TC008</v23:Value>
+                  </v23:CustomerReferences>
+                  <v23:TermsOfSale>FOB</v23:TermsOfSale>
+               </v23:CommercialInvoice>
+               <v23:Commodities>
+                  <v23:Name>BOOKS</v23:Name>
+                  <v23:NumberOfPieces>1</v23:NumberOfPieces>
+                  <v23:Description>Books</v23:Description>
+                  <v23:CountryOfManufacture>US</v23:CountryOfManufacture>
+                  <v23:Weight>
+                     <v23:Units>LB</v23:Units>
+                     <v23:Value>10</v23:Value>
+                  </v23:Weight>
+                  <v23:Quantity>1</v23:Quantity>
+                  <v23:QuantityUnits>EA</v23:QuantityUnits>
+                  <v23:UnitPrice>
+                     <v23:Currency>USD</v23:Currency>
+                     <v23:Amount>10.00</v23:Amount>
+                  </v23:UnitPrice>
+                  <v23:CustomsValue>
+                     <v23:Currency>USD</v23:Currency>
+                     <v23:Amount>100</v23:Amount>
+                  </v23:CustomsValue>
+               </v23:Commodities>
+            </v23:CustomsClearanceDetail>
+            <v23:LabelSpecification>
+               <v23:LabelFormatType>COMMON2D</v23:LabelFormatType>
+               <v23:ImageType>PDF</v23:ImageType>
+               <v23:LabelStockType>PAPER_8.5X11_TOP_HALF_LABEL</v23:LabelStockType>
+            </v23:LabelSpecification>
+            <v23:RateRequestTypes>LIST</v23:RateRequestTypes>
+            <v23:PackageCount>1</v23:PackageCount>
+            <v23:RequestedPackageLineItems>
+               <v23:SequenceNumber>1</v23:SequenceNumber>
+               <v23:InsuredValue>
+                  <v23:Currency>USD</v23:Currency>
+                  <v23:Amount>100</v23:Amount>
+               </v23:InsuredValue>
+               <v23:Weight>
+                  <v23:Units>LB</v23:Units>
+                  <v23:Value>30</v23:Value>
+               </v23:Weight>
+               <v23:Dimensions>
+                  <v23:Length>20</v23:Length>
+                  <v23:Width>15</v23:Width>
+                  <v23:Height>20</v23:Height>
+                  <v23:Units>IN</v23:Units>
+               </v23:Dimensions>
+               <v23:CustomerReferences>
+                  <v23:CustomerReferenceType>CUSTOMER_REFERENCE</v23:CustomerReferenceType>
+                  <v23:Value>TC008</v23:Value>
+               </v23:CustomerReferences>
+            </v23:RequestedPackageLineItems>
+         </v23:RequestedShipment>
+      </v23:ProcessShipmentRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ProcessShipmentReply xmlns="http://fedex.com/ws/ship/v23">
+         <HighestSeverity>WARNING</HighestSeverity>
+         <Notifications>
+            <Severity>WARNING</Severity>
+            <Source>ship</Source>
+            <Code>2469</Code>
+            <Message>shipTimestamp is invalid</Message>
+            <LocalizedMessage>shipTimestamp is invalid</LocalizedMessage>
+         </Notifications>
+         <Notifications>
+            <Severity>WARNING</Severity>
+            <Source>ship</Source>
+            <Code>3380</Code>
+            <Message>Origin - Postal-City Mismatch</Message>
+            <LocalizedMessage>Origin - Postal-City Mismatch</LocalizedMessage>
+         </Notifications>
+         <Notifications>
+            <Severity>WARNING</Severity>
+            <Source>ship</Source>
+            <Code>3053</Code>
+            <Message>Recipient Postal-City Mismatch</Message>
+            <LocalizedMessage>Recipient Postal-City Mismatch</LocalizedMessage>
+         </Notifications>
+         <Notifications>
+            <Severity>WARNING</Severity>
+            <Source>ship</Source>
+            <Code>3040</Code>
+            <Message>Shipper Postal-City Mismatch</Message>
+            <LocalizedMessage>Shipper Postal-City Mismatch</LocalizedMessage>
+         </Notifications>
+         <Notifications>
+            <Severity>WARNING</Severity>
+            <Source>ship</Source>
+            <Code>8266</Code>
+            <Message>Origin Location-Postal Mismatch.</Message>
+            <LocalizedMessage>Origin Location-Postal Mismatch.</LocalizedMessage>
+         </Notifications>
+         <Notifications>
+            <Severity>WARNING</Severity>
+            <Source>ship</Source>
+            <Code>8231</Code>
+            <Message>Destination Postal-City Mismatch.</Message>
+            <LocalizedMessage>Destination Postal-City Mismatch.</LocalizedMessage>
+         </Notifications>
+         <Notifications>
+            <Severity>WARNING</Severity>
+            <Source>ship</Source>
+            <Code>8906</Code>
+            <Message>The origin country or service type does not allow all labels to be uploaded.</Message>
+            <LocalizedMessage>The origin country or service type does not allow all labels to be uploaded.</LocalizedMessage>
+         </Notifications>
+         <Notifications>
+            <Severity>NOTE</Severity>
+            <Source>ship</Source>
+            <Code>2522</Code>
+            <Message>Sender is the Importer of Record</Message>
+            <LocalizedMessage>Sender is the Importer of Record</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>ProcessShip_Basic</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>ship</ServiceId>
+            <Major>23</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <JobId>350e20a7e31760s025b3j222424</JobId>
+         <CompletedShipmentDetail>
+            <UsDomestic>false</UsDomestic>
+            <CarrierCode>FDXG</CarrierCode>
+            <MasterTrackingId>
+               <TrackingIdType>FEDEX</TrackingIdType>
+               <TrackingNumber>794909388001</TrackingNumber>
+            </MasterTrackingId>
+            <ServiceTypeDescription>FXG</ServiceTypeDescription>
+            <ServiceDescription>
+               <ServiceType>FEDEX_GROUND</ServiceType>
+               <Code>92</Code>
+               <Description>FedEx Ground</Description>
+               <AstraDescription>FXG</AstraDescription>
+            </ServiceDescription>
+            <PackagingDescription>YOUR_PACKAGING</PackagingDescription>
+            <OperationalDetail>
+               <OriginLocationNumber>150</OriginLocationNumber>
+               <DestinationLocationNumber>6142</DestinationLocationNumber>
+               <TransitTime>THREE_DAYS</TransitTime>
+               <IneligibleForMoneyBackGuarantee>true</IneligibleForMoneyBackGuarantee>
+               <ServiceCode>92</ServiceCode>
+               <PackagingCode>01</PackagingCode>
+            </OperationalDetail>
+            <ShipmentRating>
+               <ActualRateType>PAYOR_ACCOUNT_PACKAGE</ActualRateType>
+               <EffectiveNetDiscount>
+                  <Currency>USD</Currency>
+                  <Amount>0.33</Amount>
+               </EffectiveNetDiscount>
+               <ShipmentRateDetails>
+                  <RateType>PAYOR_ACCOUNT_PACKAGE</RateType>
+                  <RateZone>51</RateZone>
+                  <RatedWeightMethod>DIM</RatedWeightMethod>
+                  <DimDivisor>139</DimDivisor>
+                  <FuelSurchargePercent>6.5</FuelSurchargePercent>
+                  <TotalBillingWeight>
+                     <Units>LB</Units>
+                     <Value>44.0</Value>
+                  </TotalBillingWeight>
+                  <TotalDimWeight>
+                     <Units>LB</Units>
+                     <Value>44.0</Value>
+                  </TotalDimWeight>
+                  <TotalBaseCharge>
+                     <Currency>USD</Currency>
+                     <Amount>66.55</Amount>
+                  </TotalBaseCharge>
+                  <TotalFreightDiscounts>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalFreightDiscounts>
+                  <TotalNetFreight>
+                     <Currency>USD</Currency>
+                     <Amount>66.55</Amount>
+                  </TotalNetFreight>
+                  <TotalSurcharges>
+                     <Currency>USD</Currency>
+                     <Amount>4.33</Amount>
+                  </TotalSurcharges>
+                  <TotalNetFedExCharge>
+                     <Currency>USD</Currency>
+                     <Amount>70.88</Amount>
+                  </TotalNetFedExCharge>
+                  <TotalTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalTaxes>
+                  <TotalNetCharge>
+                     <Currency>USD</Currency>
+                     <Amount>70.88</Amount>
+                  </TotalNetCharge>
+                  <TotalRebates>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalRebates>
+                  <TotalDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesAndTaxes>
+                  <TotalAncillaryFeesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>21.61</Amount>
+                  </TotalAncillaryFeesAndTaxes>
+                  <TotalDutiesTaxesAndFees>
+                     <Currency>USD</Currency>
+                     <Amount>21.61</Amount>
+                  </TotalDutiesTaxesAndFees>
+                  <TotalNetChargeWithDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>92.49</Amount>
+                  </TotalNetChargeWithDutiesAndTaxes>
+                  <Surcharges>
+                     <SurchargeType>INSURED_VALUE</SurchargeType>
+                     <Level>PACKAGE</Level>
+                     <Description>Insured value</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </Amount>
+                  </Surcharges>
+                  <Surcharges>
+                     <SurchargeType>FUEL</SurchargeType>
+                     <Level>PACKAGE</Level>
+                     <Description>FedEx Ground Fuel</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>4.33</Amount>
+                     </Amount>
+                  </Surcharges>
+                  <AncillaryFeesAndTaxes>
+                     <Type>CLEARANCE_ENTRY_FEE</Type>
+                     <Description>Clearance Entry Fee</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>19.12</Amount>
+                     </Amount>
+                  </AncillaryFeesAndTaxes>
+                  <AncillaryFeesAndTaxes>
+                     <Type>HARMONIZED_SALES_TAX</Type>
+                     <Description>Harmonized Sales Tax</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>2.49</Amount>
+                     </Amount>
+                  </AncillaryFeesAndTaxes>
+               </ShipmentRateDetails>
+               <ShipmentRateDetails>
+                  <RateType>PAYOR_LIST_PACKAGE</RateType>
+                  <RateZone>51</RateZone>
+                  <RatedWeightMethod>DIM</RatedWeightMethod>
+                  <DimDivisor>139</DimDivisor>
+                  <FuelSurchargePercent>7.0</FuelSurchargePercent>
+                  <TotalBillingWeight>
+                     <Units>LB</Units>
+                     <Value>44.0</Value>
+                  </TotalBillingWeight>
+                  <TotalDimWeight>
+                     <Units>LB</Units>
+                     <Value>44.0</Value>
+                  </TotalDimWeight>
+                  <TotalBaseCharge>
+                     <Currency>USD</Currency>
+                     <Amount>66.55</Amount>
+                  </TotalBaseCharge>
+                  <TotalFreightDiscounts>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalFreightDiscounts>
+                  <TotalNetFreight>
+                     <Currency>USD</Currency>
+                     <Amount>66.55</Amount>
+                  </TotalNetFreight>
+                  <TotalSurcharges>
+                     <Currency>USD</Currency>
+                     <Amount>4.66</Amount>
+                  </TotalSurcharges>
+                  <TotalNetFedExCharge>
+                     <Currency>USD</Currency>
+                     <Amount>71.21</Amount>
+                  </TotalNetFedExCharge>
+                  <TotalTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalTaxes>
+                  <TotalNetCharge>
+                     <Currency>USD</Currency>
+                     <Amount>71.21</Amount>
+                  </TotalNetCharge>
+                  <TotalRebates>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalRebates>
+                  <TotalDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>0.0</Amount>
+                  </TotalDutiesAndTaxes>
+                  <TotalAncillaryFeesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>21.61</Amount>
+                  </TotalAncillaryFeesAndTaxes>
+                  <TotalDutiesTaxesAndFees>
+                     <Currency>USD</Currency>
+                     <Amount>21.61</Amount>
+                  </TotalDutiesTaxesAndFees>
+                  <TotalNetChargeWithDutiesAndTaxes>
+                     <Currency>USD</Currency>
+                     <Amount>92.82</Amount>
+                  </TotalNetChargeWithDutiesAndTaxes>
+                  <Surcharges>
+                     <SurchargeType>INSURED_VALUE</SurchargeType>
+                     <Level>PACKAGE</Level>
+                     <Description>Insured value</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </Amount>
+                  </Surcharges>
+                  <Surcharges>
+                     <SurchargeType>FUEL</SurchargeType>
+                     <Level>PACKAGE</Level>
+                     <Description>FedEx Ground Fuel</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>4.66</Amount>
+                     </Amount>
+                  </Surcharges>
+                  <AncillaryFeesAndTaxes>
+                     <Type>CLEARANCE_ENTRY_FEE</Type>
+                     <Description>Clearance Entry Fee</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>19.12</Amount>
+                     </Amount>
+                  </AncillaryFeesAndTaxes>
+                  <AncillaryFeesAndTaxes>
+                     <Type>HARMONIZED_SALES_TAX</Type>
+                     <Description>Harmonized Sales Tax</Description>
+                     <Amount>
+                        <Currency>USD</Currency>
+                        <Amount>2.49</Amount>
+                     </Amount>
+                  </AncillaryFeesAndTaxes>
+               </ShipmentRateDetails>
+            </ShipmentRating>
+            <ExportComplianceStatement>NO EEI 30.36</ExportComplianceStatement>
+            <DocumentRequirements>
+               <RequiredDocuments>COMMERCIAL_INVOICE</RequiredDocuments>
+               <GenerationDetails>
+                  <Type>COMMERCIAL_INVOICE</Type>
+                  <MinimumCopiesRequired>0</MinimumCopiesRequired>
+                  <Letterhead>OPTIONAL</Letterhead>
+                  <ElectronicSignature>OPTIONAL</ElectronicSignature>
+               </GenerationDetails>
+               <ProhibitedDocuments>PRO_FORMA_INVOICE</ProhibitedDocuments>
+               <ProhibitedDocuments>AIR_WAYBILL</ProhibitedDocuments>
+            </DocumentRequirements>
+            <CompletedEtdDetail>
+               <Type>ELECTRONIC_DOCUMENTS_ONLY</Type>
+               <UploadDocumentReferenceDetails>
+                  <LineNumber>1</LineNumber>
+                  <CustomerReference>Customer_Reference1_For_DocumentReference</CustomerReference>
+                  <DocumentProducer>CUSTOMER</DocumentProducer>
+                  <DocumentType>COMMERCIAL_INVOICE</DocumentType>
+                  <DocumentId>090493e180f35658</DocumentId>
+                  <DocumentIdProducer>CUSTOMER</DocumentIdProducer>
+               </UploadDocumentReferenceDetails>
+            </CompletedEtdDetail>
+            <CompletedPackageDetails>
+               <SequenceNumber>1</SequenceNumber>
+               <TrackingIds>
+                  <TrackingIdType>FEDEX</TrackingIdType>
+                  <TrackingNumber>794909388001</TrackingNumber>
+               </TrackingIds>
+               <GroupNumber>0</GroupNumber>
+               <PackageRating>
+                  <ActualRateType>PAYOR_ACCOUNT_PACKAGE</ActualRateType>
+                  <EffectiveNetDiscount>
+                     <Currency>USD</Currency>
+                     <Amount>0.33</Amount>
+                  </EffectiveNetDiscount>
+                  <PackageRateDetails>
+                     <RateType>PAYOR_ACCOUNT_PACKAGE</RateType>
+                     <RatedWeightMethod>DIM</RatedWeightMethod>
+                     <BillingWeight>
+                        <Units>LB</Units>
+                        <Value>44.0</Value>
+                     </BillingWeight>
+                     <DimWeight>
+                        <Units>LB</Units>
+                        <Value>44.0</Value>
+                     </DimWeight>
+                     <BaseCharge>
+                        <Currency>USD</Currency>
+                        <Amount>66.55</Amount>
+                     </BaseCharge>
+                     <TotalFreightDiscounts>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalFreightDiscounts>
+                     <NetFreight>
+                        <Currency>USD</Currency>
+                        <Amount>66.55</Amount>
+                     </NetFreight>
+                     <TotalSurcharges>
+                        <Currency>USD</Currency>
+                        <Amount>4.33</Amount>
+                     </TotalSurcharges>
+                     <NetFedExCharge>
+                        <Currency>USD</Currency>
+                        <Amount>70.88</Amount>
+                     </NetFedExCharge>
+                     <TotalTaxes>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalTaxes>
+                     <NetCharge>
+                        <Currency>USD</Currency>
+                        <Amount>70.88</Amount>
+                     </NetCharge>
+                     <TotalRebates>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalRebates>
+                     <Surcharges>
+                        <SurchargeType>INSURED_VALUE</SurchargeType>
+                        <Level>PACKAGE</Level>
+                        <Description>Insured value</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>0.0</Amount>
+                        </Amount>
+                     </Surcharges>
+                     <Surcharges>
+                        <SurchargeType>FUEL</SurchargeType>
+                        <Level>PACKAGE</Level>
+                        <Description>FedEx Ground Fuel</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>4.33</Amount>
+                        </Amount>
+                     </Surcharges>
+                  </PackageRateDetails>
+                  <PackageRateDetails>
+                     <RateType>PAYOR_LIST_PACKAGE</RateType>
+                     <RatedWeightMethod>DIM</RatedWeightMethod>
+                     <BillingWeight>
+                        <Units>LB</Units>
+                        <Value>44.0</Value>
+                     </BillingWeight>
+                     <DimWeight>
+                        <Units>LB</Units>
+                        <Value>44.0</Value>
+                     </DimWeight>
+                     <BaseCharge>
+                        <Currency>USD</Currency>
+                        <Amount>66.55</Amount>
+                     </BaseCharge>
+                     <TotalFreightDiscounts>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalFreightDiscounts>
+                     <NetFreight>
+                        <Currency>USD</Currency>
+                        <Amount>66.55</Amount>
+                     </NetFreight>
+                     <TotalSurcharges>
+                        <Currency>USD</Currency>
+                        <Amount>4.66</Amount>
+                     </TotalSurcharges>
+                     <NetFedExCharge>
+                        <Currency>USD</Currency>
+                        <Amount>71.21</Amount>
+                     </NetFedExCharge>
+                     <TotalTaxes>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalTaxes>
+                     <NetCharge>
+                        <Currency>USD</Currency>
+                        <Amount>71.21</Amount>
+                     </NetCharge>
+                     <TotalRebates>
+                        <Currency>USD</Currency>
+                        <Amount>0.0</Amount>
+                     </TotalRebates>
+                     <Surcharges>
+                        <SurchargeType>INSURED_VALUE</SurchargeType>
+                        <Level>PACKAGE</Level>
+                        <Description>Insured value</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>0.0</Amount>
+                        </Amount>
+                     </Surcharges>
+                     <Surcharges>
+                        <SurchargeType>FUEL</SurchargeType>
+                        <Level>PACKAGE</Level>
+                        <Description>FedEx Ground Fuel</Description>
+                        <Amount>
+                           <Currency>USD</Currency>
+                           <Amount>4.66</Amount>
+                        </Amount>
+                     </Surcharges>
+                  </PackageRateDetails>
+               </PackageRating>
+               <OperationalDetail>
+                  <OperationalInstructions>
+                     <Number>2</Number>
+                     <Content>TRK#</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>7</Number>
+                     <Content>9622002600006619782300794909388001</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>8</Number>
+                     <Content>552J1/3564/DCA5</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>10</Number>
+                     <Content>7949 0938 8001</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>13</Number>
+                     <Content>INTL</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>15</Number>
+                     <Content>N1R 7J5</Content>
+                  </OperationalInstructions>
+                  <OperationalInstructions>
+                     <Number>18</Number>
+                     <Content>9622 0026 0 (000 000 0000) 0 00 7949 0938 8001</Content>
+                  </OperationalInstructions>
+                  <Barcodes>
+                     <BinaryBarcodes>
+                        <Type>COMMON_2D</Type>
+                        <Value>Wyk+HjAxHTAyTjFSN0o1HTEyNB0wMjYdNzk0OTA5Mzg4MDAxHUZERUcdNjYxOTc4Mh0zNDgdHTEvMR0zMC4wMExCHU4dSW5wdXQgWW91ciBJbmZvcm1hdGlvbh1SRUNJUElFTlQgQ0lUWSBDQU4yMB1PTh1BYmhheV9zaGlwcGVyHjA2HTEwWkdJMDA3HTExWlN5bnRlbB0xMlo5ODIyMjgwNzIxHTE0WklucHV0IFlvdXIgSW5mb3JtYXRpb24dMjBaHDk5HTMxWjk2MjIwMDI2MDAwMDY2MTk3ODIzMDA3OTQ5MDkzODgwMDEdOUtUQzAwOB05OVpHSUJJMDQcVVMcMTI3HENBRBxCb29rcxxOTyBFRUkgMzAuMzYcMDEwHFMcMTUwMDY3NjAwHEVYHFkcU3ludGVsHElucHV0IFlvdXIgSW5mb3JtYXRpHFBpdHRzYnVyZ2gcUEEcMTUxMDgcVVMcHR4E</Value>
+                     </BinaryBarcodes>
+                     <StringBarcodes>
+                        <Type>FEDEX_1D</Type>
+                        <Value>9622002600006619782300794909388001</Value>
+                     </StringBarcodes>
+                  </Barcodes>
+                  <GroundServiceCode>026</GroundServiceCode>
+               </OperationalDetail>
+               <Label>
+                  <Type>OUTBOUND_LABEL</Type>
+                  <ShippingDocumentDisposition>RETURNED</ShippingDocumentDisposition>
+                  <ImageType>PDF</ImageType>
+                  <Resolution>200</Resolution>
+                  <CopiesToPrint>1</CopiesToPrint>
+                  <Parts>
+                     <DocumentPartSequenceNumber>1</DocumentPartSequenceNumber>
+                     <Image>JVBERi0xLjQKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMyAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL1R5cGUgL091dGxpbmVzCi9Db3VudCAwCj4+CmVuZG9iagozIDAgb2JqCjw8Ci9UeXBlIC9QYWdlcwovQ291bnQgMQovS2lkcyBbMTggMCBSXQo+PgplbmRvYmoKNCAwIG9iagpbL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSV0KZW5kb2JqCjUgMCBvYmoKPDwKL1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1R5cGUxCi9CYXNlRm9udCAvSGVsdmV0aWNhCi9FbmNvZGluZyAvTWFjUm9tYW5FbmNvZGluZwo+PgplbmRvYmoKNiAwIG9iago8PAovVHlwZSAvRm9udAovU3VidHlwZSAvVHlwZTEKL0Jhc2VGb250IC9IZWx2ZXRpY2EtQm9sZAovRW5jb2RpbmcgL01hY1JvbWFuRW5jb2RpbmcKPj4KZW5kb2JqCjcgMCBvYmoKPDwKL1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1R5cGUxCi9CYXNlRm9udCAvSGVsdmV0aWNhLU9ibGlxdWUKL0VuY29kaW5nIC9NYWNSb21hbkVuY29kaW5nCj4+CmVuZG9iago4IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkT2JsaXF1ZQovRW5jb2RpbmcgL01hY1JvbWFuRW5jb2RpbmcKPj4KZW5kb2JqCjkgMCBvYmoKPDwKL1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1R5cGUxCi9CYXNlRm9udCAvQ291cmllcgovRW5jb2RpbmcgL01hY1JvbWFuRW5jb2RpbmcKPj4KZW5kb2JqCjEwIDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL0NvdXJpZXItQm9sZAovRW5jb2RpbmcgL01hY1JvbWFuRW5jb2RpbmcKPj4KZW5kb2JqCjExIDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL0NvdXJpZXItT2JsaXF1ZQovRW5jb2RpbmcgL01hY1JvbWFuRW5jb2RpbmcKPj4KZW5kb2JqCjEyIDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL0NvdXJpZXItQm9sZE9ibGlxdWUKL0VuY29kaW5nIC9NYWNSb21hbkVuY29kaW5nCj4+CmVuZG9iagoxMyAwIG9iago8PAovVHlwZSAvRm9udAovU3VidHlwZSAvVHlwZTEKL0Jhc2VGb250IC9UaW1lcy1Sb21hbgovRW5jb2RpbmcgL01hY1JvbWFuRW5jb2RpbmcKPj4KZW5kb2JqCjE0IDAgb2JqCjw8Ci9UeXBlIC9Gb250Ci9TdWJ0eXBlIC9UeXBlMQovQmFzZUZvbnQgL1RpbWVzLUJvbGQKL0VuY29kaW5nIC9NYWNSb21hbkVuY29kaW5nCj4+CmVuZG9iagoxNSAwIG9iago8PAovVHlwZSAvRm9udAovU3VidHlwZSAvVHlwZTEKL0Jhc2VGb250IC9UaW1lcy1JdGFsaWMKL0VuY29kaW5nIC9NYWNSb21hbkVuY29kaW5nCj4+CmVuZG9iagoxNiAwIG9iago8PAovVHlwZSAvRm9udAovU3VidHlwZSAvVHlwZTEKL0Jhc2VGb250IC9UaW1lcy1Cb2xkSXRhbGljCi9FbmNvZGluZyAvTWFjUm9tYW5FbmNvZGluZwo+PgplbmRvYmoKMTcgMCBvYmogCjw8Ci9DcmVhdGlvbkRhdGUgKEQ6MjAwMykKL1Byb2R1Y2VyIChGZWRFeCBTZXJ2aWNlcykKL1RpdGxlIChGZWRFeCBTaGlwcGluZyBMYWJlbCkNL0NyZWF0b3IgKEZlZEV4IEN1c3RvbWVyIEF1dG9tYXRpb24pDS9BdXRob3IgKENMUyBWZXJzaW9uIDUxMjAxMzUpCj4+CmVuZG9iagoxOCAwIG9iago8PAovVHlwZSAvUGFnZQ0vUGFyZW50IDMgMCBSCi9SZXNvdXJjZXMgPDwgL1Byb2NTZXQgNCAwIFIgCiAvRm9udCA8PCAvRjEgNSAwIFIgCi9GMiA2IDAgUiAKL0YzIDcgMCBSIAovRjQgOCAwIFIgCi9GNSA5IDAgUiAKL0Y2IDEwIDAgUiAKL0Y3IDExIDAgUiAKL0Y4IDEyIDAgUiAKL0Y5IDEzIDAgUiAKL0YxMCAxNCAwIFIgCi9GMTEgMTUgMCBSIAovRjEyIDE2IDAgUiAKID4+Ci9YT2JqZWN0IDw8IC9GZWRFeEdyb3VuZCAyMCAwIFIKL0dyb3VuZEcgMjEgMCBSCi9iYXJjb2RlMCAyMiAwIFIKL0VuZ2xpc2hPbnl4Rm9sZGluZ0VuZ2xpc2gucG5nMjcwIDIzIDAgUgo+Pgo+PgovTWVkaWFCb3ggWzAgMCA3OTIgNjEyXQovVHJpbUJveFswIDAgNzkyIDYxMl0KL0NvbnRlbnRzIDE5IDAgUgovUm90YXRlIDkwPj4KZW5kb2JqCjE5IDAgb2JqCjw8IC9MZW5ndGggMjYzOAovRmlsdGVyIFsvQVNDSUk4NURlY29kZSAvRmxhdGVEZWNvZGVdIAo+PgpzdHJlYW0KR2F1MEVnTVJ1aSZxKGs7cyQuXFtwLVtQRSdlYCJoYWpTZlpZPEM8K1A+KSlhPVAwbCYvJEw+Jy83bWw/cUU4QU03ZE9fOzZPPzomKCddMlUKTE5SKixPXyEzJEJmbV5abWdZMXE5ViMydTlJSyk0YGFBR1paZE8qI1kiaVVfQW0+ZU5tLjZuJiJUU2FmZSVscjAlIW8xSTRiJTExVzc+Z20KaTcuJUExTSlmajVHUD1FPmlyQEYiT0I3WyhHI2NuNTBxYS1RVV86IUdGa3BjVD9VRkpqUkAzNVoyPU9cXTVOYmowWGklQmhfKSctNTxYbkIKXFFiNjlgTCEnMG91bElBUSEuR2pHJ1djVmg9XlUqYE01dStyIWZJN09uP1woW0BQLE5oMEJBNEtTKmpfUGBAaE4pTUxxWC4zZVJvIztZJnUKODBkYillOVUhcWVyIyheb0lcdFdtZiY0UlFqWmhVczY5PUEiXzZcWFBidGs8NGY/PE9jOCQ5VkIjRC8/cVQhZUkkRFgoTThFKTNrX3RZP1sKb1ApISxsWUxaTF8tVSdYZ1dlYVFHNVZAIW1Gc1dQNlgnR2lONUhiOD10R0g5QEVOa08rSWVtNktEJGkhZlxUJ15kSlcqZD40JCNVZ1IwVT8KU3FzYXA2IjczWGFuZV9WMClyPlMqXzQpOihkQyxyaUBuX2ZRJnE2QzZxXmQqbSo/MkRBIVldYjdONFk9WUhQXlReVVpFJlciKyNbRF9qOkoKV3NBKS9iNC0iIzZhYVxAUmRcJD5xc3VyYSprPjdlLUsiM21JWDIwJyksWzldUmhxLkdqJVk/RT1NL3BTTnAiVWFxLCw9TVdCS0wlI0onV2UKP1UoLTNxL1VmUzgyZUJbQkI9OlQpXXQvLiskX0BTXCdYITZjK2hFJiVqOE5jTyU4ZlRgU2s6Pz5jR0VVbDUtaztdMG0saD1LODJYJEVtXzsKNGMrOGk7bkc8UzMiNEo5T0xlNVolOV1RL21wbGlFQ2NTK0BlO2RdUlc6VTFDYyRtby4wKGVIZTY6NTElJEMqI14sTFdvcEFnQmQkJV1hYSQKTkw1cV5lQnQ+aU8vb1VISEBBSUFbbmJqWTgoIT5PX2UtJHE9OFFjIUZUKjFYcj0+ImlCKkpnVlNxVGpuVlBuX0ZacCRFT1RKX0ItZmguJFsKK3MpY2xMYmtjU3I9I3IrNUtzLlRGYGh0Tm5ObFBMY01qNVY7M0cySGJzKUpMaGUrOU8lMG1bbFU4TyJiJ3NbRVxORmYsXWpdLCpfYzNMMmMKOF9gXXReaGRnJ0knT2U0UVYnPnNRSjNoZGc1Jj5WKnVXTWhrKVdyIk0lXllYKyI+NyYrVVFfODdTOztZXnQkOGkhLidjJj1YWDArLkhgSTYKUmhhc19JKmtqL29XWTlGPz4odTBSPU1TTG4pJUZMSE1RTiEoUSZlZ0Q2KWM5PmcjaE1yR3FFbClqQlZMJmxbPytOUnJUPDBYS0hgI1pHQkEKN1R1PDlATkFuVmheOjRoTmBPNGkwajM5XWF0bkk7YChXX3BwIV0sWG5XVEBZVVFjJjMzLy44SyZzMjdLaCZZR1c8WUNGQDczTj5VY0smXEkKMVwiNDVfLGlvM28jOG9KPEFxLS1EZ2FvUTVwYkAuanJrKksrRU8tbD43UmAvXyxgcVhLbktEITJNJE11XVFHTisiZE8yWWM0dVBMLEY1N0MKZWVJQS9ZKGpCMzZAOVU/PjloNXMwYmVeRVpzP2hBWjgnVTU9OjtFMDVySmVRLmlMRmddZitHMSxfbl5qJD5DWFNsYFNvNCYwRjZELCYxZFEKKj4yQ0NcS0Qia0A7MDY+cGEzNjRERDlmPVRqVj5lO0NSNjkhbyouIVslNEtvRWhsXlkza0BaPCQqNkYoLGszRUc7NlZLTiVMPVNkS2VSVSwKOFdKcTNbI3EuMFhLVm1xQ2tRaDZPQHVZLkVUcl0rQ0VbZUpsREM2LWosIydqS3NfSV1vR1ZHKiJOVmF0b1EjcEsmMkpDR1AnNGxJNXFSMVwKJGN1Ilc7UTRbcFBeRjRzJjtAJ0UzSlZTRStxSEhHIlAsb1xJMyhabkpbV3AmYVoicW0nWGs5MTFfJz5cT2xBdV88KTxbJmxIbGhyIlBcImQKSSg7Xl1YP2ctNkZZVlchcU02IUshRl5bPmo7RjNKUzRiRGpLWi0/VUxNTnRXQV5wJS5nXV8sPzI1aEw6bW1jVWszKSE2YGVsVzsncERuclYKS2d1c0Y5Im0lMEApM0VOTmt1IT9nMXItKV0jR1g+THBERylvMjdwYm5xbGFDMSc6XlhaanNVQSlhYzQqOGFiRV46VSdHYUZOLC8zK0E3LS0KSDVxOUovanUmQ2VRPDNRbWxOTGE7KilYOUd1Vy9hOnIyPUM0PFYncDhRZTtuQlBTXF1XOCJqTlRSS2JcUk8tXSpDKFVwXi5FcXAyYUohXkIKRkNUIXJsMHFdZmViJywuPXU2N0stQ0RSZWpNUjpObmZZbEdOWmlGNz1DS3IvKSQ7cGwjPD9uWyEobUBFPUcrY0stS11UZGEqJ0VKcWlcMiMKKUg4J0o5UmszOF1hbTRaK0tWZE82PlpJPCFeU2xmKGIjUWtKbS5BQyhRcWg4VFRiT0BmKDAzTF8xSlc9cS9yP2ReJUB1czoxK01EPjFeNlgKXzI4QEBvaHJYRkNFWCs3QCxRK2xTNUFJNSlKXkxUcjw+Myo3JkVMWDU6M1clPWkmZWpTY145aiM8VWZNQyUrWChkUlpfTktwYEFJPjxzaV8KW2RRTTkzKz5hTWlFJjtzRlIsLDlYPHQzNyMnPUBSXyVYWSwvOXFqUTUuXCYsOWplRyQia1VMKk8mcD4qOCIuNDMxNyNgPGFsUyptVGNsdEMKPSRbO2QkJzNDKCRHJXRBLCRqUDpIaXNuUEE9JUNKVzUwSyZmWFtLLU0hVkpaLmQvQFw2LnRIX1Q+dCc9X108ay9RI3NLalhZYjBXSzk9aCQKa2ROXmRaRDtQYTY4cmxqb04rUEwySmhmJFNZT2chM1AkPTBJIi0nWUkoMj1eQFllJTZWWl8vVWBDN2FsRjFIdUcscT45VSdRYj84YDs7RDAKKU5eWT1jbT4xMEBDTGlTU2FYMCFIaVNgUz5SZFhqWldPQmUxaV04NWJpLlFAOThCUV5jUCNdMWIiamA3VCVCN0dAamZLNyhOanI+IlxHJEIKODwqJE1yN18wLjxVPkUqYjdVL11iQydEUSg/P2BuOmsvSjVfVltiZ1BQNmZlRi5XSlNqQ2ZwKV9DK0QzaWYsc20tVzdgQjUhPTFLWUxORWAKNSdgSTZDR2N0RVMuKGsnYU1NPChqR1UqZWVyQl40XD0sc1QicCQ1OSgvS0cuVD9jSz5hIXNgcms9aUw3OlMtIV82XDdXOSRMKUhMZzNjKEoKXkd1KzRycTU8ZmBPQSc9P0BNYGlJVztmRmRzXGJkX2pDPjRxPlVLUytpQTB+PgplbmRzdHJlYW0KZW5kb2JqCjIwIDAgb2JqCjw8IC9UeXBlIC9YT2JqZWN0Ci9TdWJ0eXBlIC9JbWFnZQovV2lkdGggMTE4Ci9IZWlnaHQgNDcKL0NvbG9yU3BhY2UgL0RldmljZUdyYXkKL0JpdHNQZXJDb21wb25lbnQgOAovTGVuZ3RoIDQ1MAovRmlsdGVyIFsvQVNDSUk4NURlY29kZSAvRmxhdGVEZWNvZGVdCj4+c3RyZWFtCkdiIi9lSkldUj8jWG5MZ1Q2PGRmL0kuJj9CPWhjRGFnLXJENF0wJVBmTVRaK2BRU0krSl1DXiZyRDNBOGxNOG5uRkZQIUkuZipqWUMyVG5bCjw3aSg3XDxKSCE8dVZ1bTNISmZrPDgpKyVaTipNZi1zJWw+VlpVQ3MsOWA5b1cmVE0lL2NnbUpVJS5mTGhiSSQnPkJndV9pQFErQyZiV3I2CjNEQ002L0ZVTXQsREJeLCpSMDBzIl1XRkdDMGo6I1dhNGdXPCpRZVQ7LD87QlMhb3J1NXUkXzNCMmpcMkMuJ2IuRlhxQFgxQSosYVxTYUdKCjpuTWtjSVFcLkpmOjA1N18tTDRKPCUyUU1tSWFvQFw4OEZLR2IxcCxtVzslLkhOQy47Vi4rYGQpczpyQmhVakxIQlgyUkNeOV9xODFuVltLCkw9MlFCRnQ7clRDbjZbZnBtcHI3U19jRyFkV1ssc1gxKys4UjwpLSVGY1Uua1JwV1MpWEU7OSs7NGxTK182QXNyY0ViUUxjSUVjXzslTUtFCjNjakdUOSpOW0oucE4yV21JOFc/JGw7YzZdNWQvP3A4dDxzRWFKMmVybCt+PgplbmRzdHJlYW0KZW5kb2JqCjIxIDAgb2JqCjw8IC9UeXBlIC9YT2JqZWN0Ci9TdWJ0eXBlIC9JbWFnZQovV2lkdGggNTQKL0hlaWdodCA1NAovQ29sb3JTcGFjZSAvRGV2aWNlR3JheQovQml0c1BlckNvbXBvbmVudCA4Ci9MZW5ndGggMTk2Ci9GaWx0ZXIgWy9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZV0KPj5zdHJlYW0KR2IiME8zdTM+aCRxL00wSiglUzcsS3VZPC1zLmxILSdxRVMocFJPSENyUG4kN1o5KWE2IkxSJ1Mjb0M1OiJFbGhMJDIzJTI/Ol8nbGNZL3QKOSZDNC9OQHJPW1tFJ2piYHM+XDpQcGptNTxDLE09Jlg7byxBUWptZmFrSm1HJDBEcFQ8YC9XSENJS2RoOHA8MGtJMj9hYVVpSUwxVzMiQyEKNkRkNjZsLD5XXkhbZi49JClyTG5UaVNmSTQzQDlJPFd+PgplbmRzdHJlYW0KZW5kb2JqCjIyIDAgb2JqCjw8IC9UeXBlIC9YT2JqZWN0Ci9TdWJ0eXBlIC9JbWFnZQovV2lkdGggMjA5Ci9IZWlnaHQgOTIKL0NvbG9yU3BhY2UgL0RldmljZUdyYXkKL0JpdHNQZXJDb21wb25lbnQgOAovTGVuZ3RoIDE4MTMKL0ZpbHRlciBbL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlXQo+PnN0cmVhbQpHYiIvY2JFYGYtJHEoIW41Om1BQFVhckBcQFEjYzhLSlQ8IyVwTyddPlBlQnFzN3NeLTM/UHM2XWJaJl1jPi0oVlZyJkhWbitGWltUNTJuWwpbQz5RZjAjI2NJcmI+L2YzK25TQVE8O1I+YCU/Xk1JTCs0KlkhZTBaJ1onPFolZClFRTVYJTduRUQxKG1vO3FfUjhqcjctQ2FgTW5Dbks5VQpRLGMuNjpfNHVhNEBpYDk4ZS09OzImb0FiaG1rQnU8LXBIMzZARVRNZWFKXCNebDZaLEwkW1w3NkAuITlhcG9OaVh1LXAwbVNybCg9WFJhOwohNyZZUCQ5RygrOHEzVkRMO01rTix0ZmBQKEU7KT1DIi9rZVAwWyMpMSp0ZlQtLjwwaWUmVT0iT207P0hFTlBwMjpeQHJIPiQsTHI6NCpsdApEWmNZWy5PVSMqVWosbihkPkU3UlRkQDRlb1hST2llYSVHWXJfX3I5KWE5aFYmMFZZKGhMbzBPI2hqPVVTSyoqSUs/XTdAJENjNDtcK0o2cwpQV1dHMDg9REdeNnNPUEFLXkE9ZFslKzAqTSJrISQrVTs2Xi09UkkwTihncjBHITZBJFpwYC9uSE9WdWFDRCw7b2ktRyg0ZF0nUEY/cTYoYwpGP2ohJ15XMC5zcGBYWmJCMU9VKThSYipQZDo2X1AhZys/PmxXU1Quai8zUC1FLSxba2s8bjNkJHEzLk5KVGdgaCs9SSIvQlc5R25UdXB1LwpIcFk+TktVZTMiJGZmQnBMM1UqUU5zUUAzbUFqTTc5aSMpbEhCSzZwSkonTz88WGxqSkwmR1s1SSUtaGokakkjRjMjUkI8T1hDNShQJW5UMQpBJzBEMFUhbUVPVUEqMklYdTU7NERfUys5JmkwJ1FRdVgnLDpiNEhIVSlZS209Y1kjakZpLDpaMC9ZUmA7KHFwclNLJ1VOLilAPE4vUyg/WwoxP0w4SyktTnVwY0BHT0slMDthIVJCPVZtXFtaM0pLKjZfPykwYmlvLkE6WDZcaEtiMC8uUSEkYVI/TE9PdUleZy4iZHMxKW4rJ0kxKGZsZAoyKzAhNyVCIS1cZ3FWSlFXZVQ7ZFtSIlYzIUw0Ql42JldYSlhrQWgtNi9MLmcjREJqMkoiYFBtVEc4ZTYqS0hAZjkvcT9lJyVtQjMnbmQtVwosRW5EUCVdLlJsTEBSTW9rKGtKa1NZWT5wbWhOSnJTTGElYGFsSF5aJmtxYydZO0peSCVMXCtXLidPWDQuIm5WKl9wbT9tRDUiTEJWMCRoWwpSYGo9JUwvdG5eJlJDN10lVk5EdVZCY0s5bEp0Pk1IZDdhJE1xJjpXXVtLXDw0UWw9KSlrazpoITMpVyhzL01MSXMkM3IjQTxUb0swPD1pYQpRJWo9cUJbZC9tQ3NfJitDMEVtU1RqXk8kVTlcTTdsKjNYTjZNPWtVSywiL0NJYHJiP1guOmhqYjJERyNZVi0lc0BnQyMrSDIxIygvaTVFSgpFZVVtV29KSmFrLCI/alxyWFZnYltJV1UwQE1sI2g7XisuSi0rX1M7Z0k1Pyo3cGkuRFVTO1Y6M1gobG82T2NfJT08SlVRQWdxZG9naDk1Vwo8bGlPVGtDJjdoViVROWdWRWckJUI0UkslTTN0K2xfTGVvS1NzcDEzKmhUWDMoMC9oV2c5ZXJVZ2EpLSlzL1xMUl5DWU9hUytpcm0lQm9NYwpURkZPPExXRGFILjhcW1o1MmY5S21UXCFeYFkoMEcpY0BwbmZrLzVJTSYiZjxNN2BKNyRXK3I4cUJGLTApW1prKm1zYWtNVicvN0ZpVTBKNgoiTlxcWU1QUC89OiJOKEEnVytMZTwvXDdlLlshXkgpXj1eOzApJnRBPUs3NV1JRCxidCkoWzMoTTZ1PllFLmtHXm8yN3MoJVFgXz1gLCxURgpmXXNlciUxQTpqImJKWC8wIklzUC03LFlEUVEndS4kQWdxV1AzKGAqXkVjOTY+b3VQW1BpJkdDKSZcYFMtb1tbb1xDSnJeMiI9VUVDMDg6KwoxX1RVIUBuZVQ8JiUiTTJPRD4nJUkndVwqOStAXipwRkQiKVVeRmNZQTlvMSwwJG1iJU86SV1bOzpjTiRXRWBGJiUoV1BzQTBnJS4wQ2g9YgpwUnEuMyRgSklWNnE4MnAxLytqbylMZDpuZiw5MGphR0w/JDJnSDwpSytvWkUuI1k3aiQuNV5iS0gnPmJSNytbOWNqSzIrN3VaVFpNK1J1VgpGWz5gUVg2UDVZaCVdKlByZytAKkNyZkhxXDlLc20hLCMwKj1TOCxrUi48TGAkVSdjYD5dMTBaXm1iY15pZyRSUTxKRF1IKShbbFxKNV4/RQpTbSViM2MmO3B1XjxnITZNPTNDcUFZMzxea2Awcn4+CmVuZHN0cmVhbQplbmRvYmoKMjMgMCBvYmoKPDwgL1R5cGUgL1hPYmplY3QKL1N1YnR5cGUgL0ltYWdlCi9XaWR0aCAxNjUKL0hlaWdodCAxNDAwCi9Db2xvclNwYWNlIC9EZXZpY2VHcmF5Ci9CaXRzUGVyQ29tcG9uZW50IDgKL0xlbmd0aCA0NjI1Ci9GaWx0ZXIgWy9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZV0KPj5zdHJlYW0KR2IiL2tOSFVpKSVScCdpMD9tZDBfMThmT1onMkY8RXFhR2pWQDpDVU46ZFMjW0stQC56enp6enp6enp6enp6enp6enp6enp6enp6enp6enoKenp6enp6enp6enp6enp6enp6enp6enp6enp6enp6enp6enp6ITttInJyZ09QIkxmUyIuczhEYms6WFcjITo+UyJESl1NYlxhRFhvITQwcygKRWEldV0oYmZpdWxoYT1EPDo1WlRYMjRPIihPYm8ocFZDZidxUmtkRDIkOks/Jl1BXltYa3RtPSJaI09eVjQ9RkIpUWklM0xDV1BtWTtJMzAKXjRETEMiMGEjJ1Rqa2deaG9tdHNSUEY0I2NsNDIkUG9fXnRcKlttaG00PT4xNWktLjAyXiY9NllMXikhcEllRVtwXT8zTiJtbCctdURTaicKXEF1PCZZYSw6SWAwMylLazNgZ01NZE4zTTlLQ0tHNiFXSUtDRVpiJCk7SG4+UkokZygsQWA0PF9NUlduXUMjZlFWUjhsa0BhUVpVUj9mVmAKVmBhLlk2IzRqJD9NSjxCXUQ8ZCMhVjNBNTxhT3RDbDcwYDZPNzBfOk47cGRcSkUySCVjPzVFaiZyIzJhTT1ZKHEoN01nP2QsQGRvWlBESFIKTklET0ZTVCNGSSNQNiRbQT1jbHEsOkVbbD4lLGU9SG9ePFxtTWk9JiJUQjtAKkZhJi5vWmIvV2MvIldTJGpTO1U0OVUqLkI/cipWP2Q5K10KKGthOy5mZmNFXCMkWmFwOT4qMWFYVDJrOztaYW9pJ0IxMjEyVT4tQWMvP0JiN3A+MDZdSW9OM1gjTld0LUZcPl4mbiVTYUZwZ1FES1wuXUgKJUN1KkNVbVxOZ3E3PFhxb0ImMSlnVCY9R11cTmJdSU9uYSwqQXJrajwtLSZFbWlUIkVjYiJqKD44OEhTUXIjOGRQal5FdHBdcUE3YHBoKz8KKjpXLjIuNjFHXVslP11RLSdkRCxoS24jXG1AXjE9Jj46b2dzaXFQO18xQGM8QU0sJG4iMURvcmRBYTRhP18zRG07TjlPUD9jSm03RyRiSyUKbmlyZS0vYVoxL1pUIXFJWTE+OysqZj9Ac24vVCItLm5mX1k8b10xNDFyT19xJ1xGWD1tYzI2dFhXay8tbjpARjQxbEpYJk9cS0wicXJkViUKLUZqQFVPW2JJSUA4QTBLZ3AkZS44WkgsO2wiSyQ9NiwrSDk4XCZRXiE+NWIlNEVOO2sqWSMxMTdBJlAmWFwiPmI5cXV1MEpPUGZhOGMyIWMKa1tzSFA5Nzh1JEZudD5pPW1SYD1KNGJsLGZiYnVUMTUmW0RRQU1EQkM0IkBta1YxLEU8XCcuZEIwMzMuTzw4VkZgaD48PzYxVEEkLlBfSlgKVl4sKHN1LitYc2NCQERmR2QkOko+UXQqLHA+Xk5ZJD9ldSpEQmFoVSsjdUZQYUNna1M+W1czZSg2Xm43NTIkWUpKTiwmcSQ3JjUxY05RPGQKQig2TWQmbSUoQTdQUmdcOiczNDo7anFmSSUlJGY7JmdcRjk9bDJNQEVxTzpvPnJBbCcqai49MVszbDReay88QEduKiJDQ1NmMlxZaEd1TFoKK250a19DRGIzQE4mUCdWNSY0LmBxLTx1ZG1rN2ROW2ArLyxUVy09OFszO2loJGVUIkZ1N2l0VHRaZEtQMk9dPywjSEJZcWJIZyo8OUE8IyIKWDVBP1dxMilcS1VyVloqKEBIRDc8LF1dSyUwIkIkPGxec3E6V0hWNEs8OGsnUj9tTlJZYUBtZD5dTC0zSl08VGEqSFRzPG9ndExsZFJNU08KMURgU2MhXkQlKCdxbDlgUkgqW21yUjRGUSpwUjhgaFFSLVpbbXBdbHRMQEAsalE6PyJXYk0/QHJkRWg8MypraWxpO2EnUD09KEhDPSg9bGcKZmQkODhzW20tS0BvNSFmNzlXOG1jOmMsWHVROiova2FgbDM3NTYkYkRlJTswOlRrJDVoclVhIVRGa2JsWVVjWiEqUiFIQzNVTVpGVmhxbkwKO3FwUDJrOlBOInI0XSpIRVk+ZiFBV2VyQFEtXGs0QTdAJGNBVWNVOFdcUChDLEJNZ1w9RCchV1gsME1BOj10WmE2NE46WjFNLTxcY09AalkKPmxhSFA5PVgqXj4oR2tTcWEybCVuTXQuajpjaW8rPEJZKkZSVz4+TUI9U0svaU5sOktSN1BZcktPazEwX1lPXCJOMlhmL001W0gxLzdBX0wKaEt1WC8+bzlxR1JbbHJoaz1PJFdvOk9fXk4vU0IlXCxJKEgoVkMsZExRbjBjXHAzPVNvP2EuZWFXT1wxbSxuayFZJiJScHIxRjJPLSZOTC0KRkxFR2VMYHFjNjpvWil0LypGNUhOL2xFJV0zKDQwcy1XOVMnQ2InREZdQ2UpdGxEL1slampORUtCMS9VZ01MJEU5Q1pMOi4iJVR0STxbVWcKSnJPSnVKKF44NFxZK2xbTVgmX0A+YkxHMXJxaWM+aTA7KXJxTV9tSlcmVHVhLWFINixWJW42PnBadCZoWkVia0MyJlIiXDRDZCVAcDdUVWgKJDg9ZFBmcTBVNGNqPy03IyhzLDwjWSg0U1JtJi1UbEZZTW1mbTwnNGozbEJOZlsnIXRyYVJYWnMnXVk0WEgiLzBfYSJOZFQlSmlyXzpkXTEKTltSZSowUm43Lmc2UFEzQVNCOVQtbEdyLmJvUV5QMXFEMG51cD1SZS8jXkdXUVdxP1ZzP1xJOlYpJnVdT1QkKjhGWl0rU01sYENbZlpJQSgKPDRWIlspMCY2QUwnLEVJV1BZQy9fNnM+ajElQkUza2FfUCtdRkVkVWw9XHMmZ0hBMEgrbEtMcj5cX01QI2lRPWwpO3BDaD5tdHAyY1kuV3IKS1pJYGxUb2knOVBdaDQnOSZ1ZnRxbUdILyQ8S09XTi9YZSEvMkIoYm5NZEAtdTNgT29GKF4zWVllJCopJjJOY1BgcmcldCk+ZWo0bmRkMEgKSGxCWk1gLFpPZGdrLSRoJzE3YzZLbGBEXDQzXlo/OXA8W2VRRU9PYW0qJkdkXmloJFZtXEo3UF47RWsqXlI9UmYyUidAUFdSKGplQk5DN0oKNVtwXkhtQEJoJTRPLlljcjwwKzVsMCJhV0tmJkRtbztwZ2docFBmXXBhRHJNKzA+dDpxXkdMJkNiTkIxRlsxIjlrL0w1Jjw3L1JDRjpNQSIKKEZQIWwvTV0pQWglczNyVTwlODNvNCUsc1hoRl1lbD9ZI2JLM0s7WlNGU3BILWIrTSw+YXIuZkliZCNHVjxEMEEqT2trIikjKWEnUkNUM1oKWnB1UTY6SiplXCJjZ11LO1hoZyMuaTI0SmgsO04nXVtSRkArN09dVCdSMi9yVko5dT9GNj1lMFZbcSMuXzckZGc7WlNORHRTJ05FWkFfM0sKTDI1IyJLTHQ3Q2tDIyNnOVVlbUdVL0pSbiE9YW4tS0okYlgoZDQxNkMvTiguZVgnMDowSEpAY0JDMmt0ODIpP0k0YmBdJTlVRmQxJz9iVF4KQFElWjIiUm1PczFlLEhkJG4uPkVdUC8nQkU+Z0g4YWxxPWBoXzNASjgtPTVpQUxgKT5McC8lWyFFJVc9UlExYSQnLlMkVUZqR19bSDRLam8KIkBFdXJbZFRLXUtVJ3E/ZFNLVUZLZi1Nc3RRMFpZTTxXOVQ5RldPLVUzLU4nS2hDY1UyI0t1UzhdQlxiYm9IRXEoVVdMZ1NlSkJMWj1IcUMKLFNgUy1QZzQ7dTFaIkpLMVdWYDFqSFJOQU5ZTVk4QjZEP1hLU183dCQyWDZyVldQUy8kbS5WbmFKI2pBZkZLSWQrZEojazxybEJxLEgoMVcKWiNualxCKVcsTzZPLXJERWciMCknOlQuT3RdMzNqTj9zOUAiLGtqTnUvST8jWDNcNjV1LFkwPmg/J0gzcTJDM3A+MFpgb19jZGIuXywuXTcKMDkhb05KRVhcYmNSJ25lMj9LUEIkcEdPIz4sLW1rR2NbPCtFO0ppMStLNktoXUlpLFNOIUBvdGA0ZF46P0khU0NqVjY4M2smXWNoPj4xcCUKLmg8bEomaztbTVs0JSlbck9kXWknYWtnMyhbQCFRLCxBVjNtaFxMIUQqKFdTMUxgTEYhWjhcbUlgbkJQWChIOWdRUm5QJDwmTFUySGleIS4KUTQmIl8iIidKcUdnJmssMU9BKWQ5ZyNQJmNITUVsXzUpaWtxWk1TbylxajU+WS5wI1xtNjIuTVReVFh0Vk5DTyJIZVYyPU5nUzgicSdXR1MKczdBRm5KLS41dD0qWzc1OV1AaFQmPTs9SmUqLWxrb1kiMXVWPWpkWzJIYG9RXmRgSVQ0VVBsTGNURmVKXTVMblRhPzJLdU1BW2hCaG00PjIKIVwrUixjNztldF9BQi9JckhsLGZFOUpdZyE7RlNTRUU4TWA0Wi1DQTFabioxUVpkRmZoOlBjTzlMTV9PVGZXbz9RMU5RQ0ROO2hIYU9eUTgKbGIkQzhTJ2xLR04+MSlyb10uPFZUZmInWG1cODc6YWdmLihGJ2dkTl0/PS9uQiNoP1BROUJqWnJFQylwR0JOQ29yKWxuclk8PlxXO1hMbFEKVVBSP1MlKktkZyZGcW85dTBLb3FVW29xLjsvNCFxRWVjKGgpVUVdT1lYaU83aCtrPVNwYkFhbz1FKGgnaSpVQ3BgYEtwcmYnK0RlSD0ndEIKXURMdWwqYUosOGY2KThNdVohRkUxU3NeW1k+aj9zO2NEcVY5ZThpSiYvNGZlOT9VR1BnP0tnZmlTNm0nJTQtQitWa1t0YWlIPmw6KjwzUHEKMjknU1hALk5tTjZGYzE3SE4kI1shZGglcm4+Z0pfYysncjYyRCUmbVtdQF8iRT9lRjRPUk0mY1NvSEtFcTdYXnU8TS08XGNPQGUsSkBDcGEKVCZfWDxDalZWal9TSTtccFVOKlo4SWVCRjc5aztzVUFUO1Q/LDB1J2dNSSU5YC1XI2ZWOUgnNXM6czFRZSs3WC1qbCFaU20ia0xZZTdWPjQKX2xcYE0zXjJxYEo6P1R1SDE0RC1jMTpPNU5RTU8oX11IUUpuPj9cZGkzbD9jLGRSbChPQnVcVEM3OTFYL0l0I1chaVFnOVBCWEliSzVcLlAKIlJrYztTXWwyWUxnYjsuaUsmdEdPbSdzNGBqYU4oZFBFR0VBKDhiaUUmX0Y5aFkwLzw+bl1IJllUQ2YuWT9EXU4jcSJpMz4rKlhHT0ZZIlcKK0hjS0VmYTYhPSFbaVM+P0lQSmRFajcyXCQ2XSZpXXJRMG1yajJnbUg/Rmk9X14lMEI5ZWFUTW1zNCRlRzJrMzEjPURjPyU6aUAvcykrJjEKQls7UTIpPDZMJi0sIm1wRS01XVQoZ05AXCkzLzVSNlNRcjtlOGgoJzZDMjpXP3FiO3AscyFvOVA3OlsqMXMva0U7TlE7O3NqUnBIKlpPJEsKdGonNTZZWS9BT284Ny89QFA/cnRgKipDZSNiVz5uS1VDU0BhR29vT0ZSOWJxUUc9RGpRMGczMSFbNCheNz4pcD5PXWlxZWw+Olc9LClxZSQKX0sjbVZANE0hKW80LShFVGVyQCFMVXMzU1prSiJMISpuJGZBZiU7U0szLU8pcE9TZXJabytGdE9tTlgoa0BPImJ1JTxwOEI7IVtcJ1JXdE8KPCtARCY4VjlmOidELEBqOTJqTzZMZXU5RjNwRDdOYkJAVUQ1MERVTXA+KWUoVU9pN3BBKUpibkssMjY4NC5cKylpOzpOKzRDY0ppYSc3Jz4KOXFGZkBjPiV1ZjpbNUkzOC9pIW9QRypKPlVMaEtSZC41KyYmPD9yNmdIUSRKKUBia0gwaU5PbFsqLWwqZSlCVDozZWYlSThFWWFSTUVoNVkKVzU7SHNLLmYnREFyals6Iy1RRkVhYkkvKyIuazFLa0FOWTkiXElHUSQlcD4+KS42NFUmZFFXKSk7SFwmMEcyTW5mRm9NIXVmP2slPDAnVSYKLWI9JChdYipZYiNfdTQpSj5FYmUvSFFycEg2c05kIWVtVzg9W2RKYG4sMWxdQjdBWjpSRmYzWTJxLENvOFQlVWhdOCJTVz96ISEhIlxPb0cKSUUvUVM1fj4KZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgMjQKMDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDA5IDAwMDAwIG4gCjAwMDAwMDAwNTggMDAwMDAgbiAKMDAwMDAwMDEwNCAwMDAwMCBuIAowMDAwMDAwMTYyIDAwMDAwIG4gCjAwMDAwMDAyMTQgMDAwMDAgbiAKMDAwMDAwMDMxMiAwMDAwMCBuIAowMDAwMDAwNDE1IDAwMDAwIG4gCjAwMDAwMDA1MjEgMDAwMDAgbiAKMDAwMDAwMDYzMSAwMDAwMCBuIAowMDAwMDAwNzI3IDAwMDAwIG4gCjAwMDAwMDA4MjkgMDAwMDAgbiAKMDAwMDAwMDkzNCAwMDAwMCBuIAowMDAwMDAxMDQzIDAwMDAwIG4gCjAwMDAwMDExNDQgMDAwMDAgbiAKMDAwMDAwMTI0NCAwMDAwMCBuIAowMDAwMDAxMzQ2IDAwMDAwIG4gCjAwMDAwMDE0NTIgMDAwMDAgbiAKMDAwMDAwMTYyMiAwMDAwMCBuIAowMDAwMDAyMDQxIDAwMDAwIG4gCjAwMDAwMDQ3NzEgMDAwMDAgbiAKMDAwMDAwNTQwNyAwMDAwMCBuIAowMDAwMDA1Nzg4IDAwMDAwIG4gCjAwMDAwMDc3ODggMDAwMDAgbiAKdHJhaWxlcgo8PAovSW5mbyAxNyAwIFIKL1NpemUgMjQKL1Jvb3QgMSAwIFIKPj4Kc3RhcnR4cmVmCjEyNjAyCiUlRU9GCg==</Image>
+                  </Parts>
+               </Label>
+               <SignatureOption>SERVICE_DEFAULT</SignatureOption>
+            </CompletedPackageDetails>
+         </CompletedShipmentDetail>
+      </ProcessShipmentReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Additional Info:
+URL:https://wsdrt.idev.fedex.com:443/web-services
+Date:Thu Dec 14 19:50:07 IST 2017
+TimeTaken:2360ms

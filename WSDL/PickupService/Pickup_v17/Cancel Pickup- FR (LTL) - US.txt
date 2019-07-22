@@ -1,0 +1,93 @@
+Cancel Pickup  FR (LTL) - US
+
+Request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v17="http://fedex.com/ws/pickup/v17">
+   <soapenv:Header/>
+   <soapenv:Body>
+       <v17:CancelPickupRequest>
+        <v17:WebAuthenticationDetail>
+            <v17:ParentCredential>
+               <v17:Key>INPUT YOUR INFORMATION</v17:Key>
+               <v17:Password>INPUT YOUR INFORMATION</v17:Password>
+            </v17:ParentCredential>
+            <v17:UserCredential>
+               <v17:Key>INPUT YOUR INFORMATION</v17:Key>
+               <v17:Password>INPUT YOUR INFORMATION</v17:Password>
+            </v17:UserCredential>
+         </v17:WebAuthenticationDetail>
+         <v17:ClientDetail>
+            <v17:AccountNumber>INPUT YOUR INFORMATION</v17:AccountNumber>
+            <v17:MeterNumber>INPUT YOUR INFORMATION</v17:MeterNumber>
+          <v17:Localization>
+               <v17:LanguageCode>EN</v17:LanguageCode>
+               <v17:LocaleCode>en</v17:LocaleCode>
+            </v17:Localization>
+         </v17:ClientDetail>
+         <v17:TransactionDetail>
+            <v17:CustomerTransactionId>v17 Cancelpickup Freight_FFE</v17:CustomerTransactionId>
+            <v17:Localization>
+               <v17:LanguageCode>EN</v17:LanguageCode>
+               <v17:LocaleCode>en</v17:LocaleCode>
+            </v17:Localization>
+         </v17:TransactionDetail>
+         <v17:Version>
+            <v17:ServiceId>disp</v17:ServiceId>
+            <v17:Major>17</v17:Major>
+            <v17:Intermediate>0</v17:Intermediate>
+            <v17:Minor>0</v17:Minor>
+         </v17:Version>
+         <v17:CarrierCode>FXFR</v17:CarrierCode>
+         <v17:PickupConfirmationNumber>${Create Pickup  FXF - Global#Response#//*:PickupConfirmationNumber}</v17:PickupConfirmationNumber>
+         <v17:ScheduledDate>${= String.format('%tF', new Date() )}</v17:ScheduledDate>
+         <v17:Location>HRO</v17:Location>
+         <v17:Remarks>Preet</v17:Remarks>
+         <v17:ShippingChargesPayment>
+            <v17:PaymentType>CASH</v17:PaymentType>
+            <v17:Payor>
+               <v17:ResponsibleParty>
+                  <v17:AccountNumber>INPUT YOUR INFORMATION</v17:AccountNumber>
+               </v17:ResponsibleParty>
+            </v17:Payor>
+            <v17:Amount>
+               <v17:Currency>USD</v17:Currency>
+               <v17:Amount>3.00</v17:Amount>
+            </v17:Amount>
+         </v17:ShippingChargesPayment>
+         <v17:Reason>TXT</v17:Reason>
+         <v17:ContactName>Pritpal</v17:ContactName>
+      </v17:CancelPickupRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <CancelPickupReply xmlns="http://fedex.com/ws/pickup/v17">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>disp</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>v17 Cancelpickup Freight_FFE</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>en</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>disp</ServiceId>
+            <Major>17</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+      </CancelPickupReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

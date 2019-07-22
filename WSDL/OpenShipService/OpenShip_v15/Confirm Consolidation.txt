@@ -1,0 +1,109 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v15="http://fedex.com/ws/openship/v15">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v15:ConfirmConsolidationRequest>
+         <v15:WebAuthenticationDetail>
+            <v15:ParentCredential>
+               <v15:Key>INPUT YOUR INFORMATION</v15:Key>
+               <v15:Password>INPUT YOUR INFORMATION</v15:Password>
+            </v15:ParentCredential>
+            <v15:UserCredential>
+               <v15:Key>INPUT YOUR INFORMATION</v15:Key>
+               <v15:Password>INPUT YOUR INFORMATION</v15:Password>
+            </v15:UserCredential>
+         </v15:WebAuthenticationDetail>
+         <v15:ClientDetail>
+            <v15:AccountNumber>INPUT YOUR INFORMATION</v15:AccountNumber>
+            <v15:MeterNumber>INPUT YOUR INFORMATION</v15:MeterNumber>
+            <v15:IntegratorId>123</v15:IntegratorId>
+            <v15:Localization>
+               <v15:LanguageCode>EN</v15:LanguageCode>
+               <v15:LocaleCode>en</v15:LocaleCode>
+            </v15:Localization>
+         </v15:ClientDetail>
+         <v15:TransactionDetail>
+            <v15:CustomerTransactionId>ConfirmConsolidationRequest_v6</v15:CustomerTransactionId>
+            <v15:Localization>
+               <v15:LanguageCode>EN</v15:LanguageCode>
+               <v15:LocaleCode>en</v15:LocaleCode>
+            </v15:Localization>
+         </v15:TransactionDetail>
+         <v15:Version>
+            <v15:ServiceId>ship</v15:ServiceId>
+            <v15:Major>15</v15:Major>
+            <v15:Intermediate>0</v15:Intermediate>
+            <v15:Minor>0</v15:Minor>
+         </v15:Version>
+         <v15:AsynchronousProcessingOptions>
+            <v15:Options>ALLOW_ASYNCHRONOUS</v15:Options>
+         </v15:AsynchronousProcessingOptions>
+         <v15:ConsolidationKey>
+            <v15:Type>INTERNATIONAL_PRIORITY_DISTRIBUTION</v15:Type>
+            <v15:Index>794899261328</v15:Index>
+            <v15:Date>2017-06-06</v15:Date>
+         </v15:ConsolidationKey>
+         <v15:LabelSpecification>
+            <v15:LabelFormatType>COMMON2D</v15:LabelFormatType>
+            <v15:ImageType>ZPLII</v15:ImageType>
+            <v15:LabelStockType>STOCK_4X6.75_LEADING_DOC_TAB</v15:LabelStockType>
+            <v15:LabelPrintingOrientation>TOP_EDGE_OF_TEXT_FIRST</v15:LabelPrintingOrientation>
+         </v15:LabelSpecification>
+         <v15:ConsolidationDocumentSpecification>
+            <v15:ConsolidationDocumentTypes>CONSOLIDATED_COMMERCIAL_INVOICE</v15:ConsolidationDocumentTypes>
+            <v15:ConsolidationDocumentTypes>CONDENSED_CRN_REPORT</v15:ConsolidationDocumentTypes>
+            <v15:ConsolidatedCommercialInvoiceDetail>
+               <v15:Format>
+                  <v15:ImageType>PDF</v15:ImageType>
+                  <v15:StockType>PAPER_LETTER</v15:StockType>
+               </v15:Format>
+            </v15:ConsolidatedCommercialInvoiceDetail>
+            <v15:CrnReportDetail>
+               <v15:Format>
+                  <v15:ImageType>PDF</v15:ImageType>
+                  <v15:StockType>PAPER_LETTER</v15:StockType>
+               </v15:Format>
+            </v15:CrnReportDetail>
+         </v15:ConsolidationDocumentSpecification>
+         <v15:RateRequestTypes>LIST</v15:RateRequestTypes>
+         <v15:EdtRequestType>ALL</v15:EdtRequestType>
+      </v15:ConfirmConsolidationRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <ConfirmConsolidationReply xmlns="http://fedex.com/ws/openship/v15">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>ship</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>ConfirmConsolidationRequest_v6</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>en</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>ship</ServiceId>
+            <Major>15</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <JobId>3bae2568a31992s01804j203338</JobId>
+         <AsynchronousProcessingResults>
+            <Options>ASYNCHRONOUSLY_PROCESSED</Options>
+         </AsynchronousProcessingResults>
+      </ConfirmConsolidationReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+

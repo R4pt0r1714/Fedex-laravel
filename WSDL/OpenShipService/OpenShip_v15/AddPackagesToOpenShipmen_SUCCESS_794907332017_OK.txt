@@ -1,0 +1,119 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v15="http://fedex.com/ws/openship/v15">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v15:AddPackagesToOpenShipmentRequest>
+         <v15:WebAuthenticationDetail>
+            <v15:ParentCredential>
+               <v15:Key>INPUT YOUR INFORMATION</v15:Key>
+               <v15:Password>INPUT YOUR INFORMATION</v15:Password>
+            </v15:ParentCredential>
+            <v15:UserCredential>
+               <v15:Key>INPUT YOUR INFORMATION</v15:Key>
+               <v15:Password>INPUT YOUR INFORMATION</v15:Password>
+            </v15:UserCredential>
+         </v15:WebAuthenticationDetail>
+         <v15:ClientDetail>
+             <v15:AccountNumber>INPUT YOUR INFORMATION</v15:AccountNumber>
+            <v15:MeterNumber>INPUT YOUR INFORMATION</v15:MeterNumber>
+            <v15:Localization>
+               <v15:LanguageCode>EN</v15:LanguageCode>
+               <v15:LocaleCode>en</v15:LocaleCode>
+            </v15:Localization>
+         </v15:ClientDetail>
+         <v15:TransactionDetail>
+            <v15:CustomerTransactionId>AddPackagesToOpenShipmentRequest_v15</v15:CustomerTransactionId>
+            <v15:Localization>
+               <v15:LanguageCode>EN</v15:LanguageCode>
+               <v15:LocaleCode>en</v15:LocaleCode>
+            </v15:Localization>
+         </v15:TransactionDetail>
+         <v15:Version>
+            <v15:ServiceId>ship</v15:ServiceId>
+            <v15:Major>15</v15:Major>
+            <v15:Intermediate>0</v15:Intermediate>
+            <v15:Minor>0</v15:Minor>
+         </v15:Version>
+         <v15:Index>Key1110</v15:Index>
+         <v15:RequestedPackageLineItems>
+            <v15:SequenceNumber>1</v15:SequenceNumber>
+            <v15:GroupNumber>1</v15:GroupNumber>
+            <v15:GroupPackageCount>1</v15:GroupPackageCount>
+            <v15:Weight>
+               <v15:Units>LB</v15:Units>
+               <v15:Value>150.00</v15:Value>
+            </v15:Weight>
+            <v15:Dimensions>
+               <v15:Length>11</v15:Length>
+               <v15:Width>11</v15:Width>
+               <v15:Height>11</v15:Height>
+               <v15:Units>IN</v15:Units>
+            </v15:Dimensions>
+            <v15:PhysicalPackaging>BAG</v15:PhysicalPackaging>
+            <v15:ItemDescription>It is Simple Package.</v15:ItemDescription>
+            <v15:ContentRecords>
+               <v15:PartNumber>1</v15:PartNumber>
+               <v15:ItemNumber>1</v15:ItemNumber>
+               <v15:ReceivedQuantity>1</v15:ReceivedQuantity>
+               <v15:Description>It is Simple Package.</v15:Description>
+            </v15:ContentRecords>
+         </v15:RequestedPackageLineItems>
+      </v15:AddPackagesToOpenShipmentRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <AddPackagesToOpenShipmentReply xmlns="http://fedex.com/ws/openship/v15">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>ship</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>AddPackagesToOpenShipmentRequest_v15</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>en</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>ship</ServiceId>
+            <Major>15</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <JobId>3f0e20a5631717s025cej221303</JobId>
+         <CompletedShipmentDetail>
+            <UsDomestic>false</UsDomestic>
+            <CarrierCode>FDXE</CarrierCode>
+            <MasterTrackingId>
+               <TrackingIdType>FEDEX</TrackingIdType>
+               <FormId>0430</FormId>
+               <TrackingNumber>794907201655</TrackingNumber>
+            </MasterTrackingId>
+            <CompletedPackageDetails>
+               <SequenceNumber>7</SequenceNumber>
+               <TrackingIds>
+                  <TrackingIdType>FEDEX</TrackingIdType>
+                  <FormId>0441</FormId>
+                  <TrackingNumber>794907332017</TrackingNumber>
+               </TrackingIds>
+               <GroupNumber>0</GroupNumber>
+            </CompletedPackageDetails>
+         </CompletedShipmentDetail>
+      </AddPackagesToOpenShipmentReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Additional Info:
+URL:https://wsdrt.idev.fedex.com:443/web-services
+Date:Wed Nov 29 11:27:22 IST 2017
+TimeTaken:2214ms

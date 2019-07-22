@@ -1,0 +1,84 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v15="http://fedex.com/ws/openship/v15">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v15:DeleteOpenConsolidationRequest>
+         <v15:WebAuthenticationDetail>
+            <v15:CspCredential>
+               <v15:Key>A4YlC6CtrGp0oAv7</v15:Key>
+               <v15:Password>GMd9tbHm3tDLUKuYkQQUJAI1a</v15:Password>
+            </v15:CspCredential>
+            <v15:UserCredential>
+               <v15:Key>MzFgqt08rlRz8WAB</v15:Key>
+               <v15:Password>i9yy72V1TfLQfr8gO6wB3Wgsw</v15:Password>
+            </v15:UserCredential>
+         </v15:WebAuthenticationDetail>
+         <v15:ClientDetail>
+            <v15:AccountNumber>150067600</v15:AccountNumber>
+            <v15:MeterNumber>7003043</v15:MeterNumber>
+            <v15:Localization>
+               <v15:LanguageCode>EN</v15:LanguageCode>
+               <v15:LocaleCode>en</v15:LocaleCode>
+            </v15:Localization>
+         </v15:ClientDetail>
+         <v15:TransactionDetail>
+            <v15:CustomerTransactionId>DeleteOpenConsolidationShipment_v15</v15:CustomerTransactionId>
+            <v15:Localization>
+               <v15:LanguageCode>EN</v15:LanguageCode>
+               <v15:LocaleCode>en</v15:LocaleCode>
+            </v15:Localization>
+         </v15:TransactionDetail>
+         <v15:Version>
+            <v15:ServiceId>ship</v15:ServiceId>
+            <v15:Major>15</v15:Major>
+            <v15:Intermediate>0</v15:Intermediate>
+            <v15:Minor>0</v15:Minor>
+         </v15:Version>
+         <v15:ConsolidationKey>
+            <v15:Type>INTERNATIONAL_PRIORITY_DISTRIBUTION</v15:Type>
+            <v15:Index>abcopenship11131</v15:Index>
+            <v15:Date>2016-12-01</v15:Date>
+         </v15:ConsolidationKey>
+         <v15:TrackingId>
+            <v15:TrackingNumber>794888663059</v15:TrackingNumber>
+         </v15:TrackingId>
+      </v15:DeleteOpenConsolidationRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <DeleteOpenConsolidationReply xmlns="http://fedex.com/ws/openship/v15">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>ship</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>DeleteOpenConsolidationShipment_v15</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>en</LocaleCode>
+            </Localization>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>ship</ServiceId>
+            <Major>8</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+      </DeleteOpenConsolidationReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+Additional Info:
+URL:https://wsdrt.idev.fedex.com:443/web-services
+Date:Thu Dec 01 17:02:39 IST 2016
+TimeTaken:1402ms

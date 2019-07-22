@@ -1,0 +1,142 @@
+Postal Code enquiry- US
+
+Request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v8="http://fedex.com/ws/cnty/v8">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v8:GetAvailablePostalsRequest>
+         <v8:WebAuthenticationDetail>
+            <v8:ParentCredential>
+               <v8:Key>INPUT YOUR INFORMATION</v8:Key>
+               <v8:Password>INPUT YOUR INFORMATION</v8:Password>
+            </v8:ParentCredential>
+            <v8:UserCredential>
+               <v8:Key>INPUT YOUR INFORMATION</v8:Key>
+               <v8:Password>INPUT YOUR INFORMATION</v8:Password>
+            </v8:UserCredential>
+         </v8:WebAuthenticationDetail>
+         <v8:ClientDetail>
+            <v8:AccountNumber>INPUT YOUR INFORMATION</v8:AccountNumber>
+            <v8:GroundShipperNumber>INPUT YOUR INFORMATION</v8:GroundShipperNumber>
+            <v8:MeterNumber>INPUT YOUR INFORMATION</v8:MeterNumber>
+            <v8:MasterMeterNumber>INPUT YOUR INFORMATION</v8:MasterMeterNumber>
+            <v8:MeterInstance>1121</v8:MeterInstance>
+            <v8:CompanyId>1432</v8:CompanyId>
+            <v8:SoftwareId>ESBD</v8:SoftwareId>
+            <v8:SoftwareRelease>3150</v8:SoftwareRelease>
+            <v8:ClientProductId>ESBD</v8:ClientProductId>
+            <v8:ClientProductVersion>3150</v8:ClientProductVersion>
+            <v8:MiddlewareProductId>12345</v8:MiddlewareProductId>
+            <v8:MiddlewareProductVersion>1620</v8:MiddlewareProductVersion>
+            <v8:IntegratorId>86655</v8:IntegratorId>
+            <v8:Region>LAC</v8:Region>
+            <v8:AutoConfigurationType>TRADITIONAL</v8:AutoConfigurationType>
+            <v8:Localization>
+               <v8:LanguageCode>EN</v8:LanguageCode>
+               <v8:LocaleCode>en</v8:LocaleCode>
+            </v8:Localization>
+         </v8:ClientDetail>
+         <v8:UserDetail>
+            <v8:UserId>12234</v8:UserId>
+            <v8:Password>abc34</v8:Password>
+            <v8:UniqueUserId>3453</v8:UniqueUserId>
+         </v8:UserDetail>
+         <v8:TransactionDetail>
+            <v8:CustomerTransactionId>123312</v8:CustomerTransactionId>
+            <v8:Localization>
+               <v8:LanguageCode>EN</v8:LanguageCode>
+               <v8:LocaleCode>en</v8:LocaleCode>
+            </v8:Localization>
+            <v8:InternalTransactionId>12dsd</v8:InternalTransactionId>
+            <v8:Tracing>false</v8:Tracing>
+            <v8:SourceFormat>API_XML</v8:SourceFormat>
+            <v8:Environment>TEST</v8:Environment>
+         </v8:TransactionDetail>
+         <v8:Version>
+            <v8:ServiceId>cnty</v8:ServiceId>
+            <v8:Major>8</v8:Major>
+            <v8:Intermediate>0</v8:Intermediate>
+            <v8:Minor>0</v8:Minor>
+         </v8:Version>
+         <v8:ShipDateTime>2016-12-12T16:16:44-06:00</v8:ShipDateTime>
+         <v8:CarrierCodes>FDXE</v8:CarrierCodes>
+         <v8:MatchAndResultCriteria>
+            <v8:MatchAddress>
+               <v8:PostalCode>50200</v8:PostalCode>
+               <v8:CountryCode>MX</v8:CountryCode>
+               <v8:Residential>1</v8:Residential>
+               <v8:GeographicCoordinates>cum murmure</v8:GeographicCoordinates>
+            </v8:MatchAddress>
+            <v8:MatchStoreNumber>15</v8:MatchStoreNumber>
+            <v8:MatchLocationTypes>FEDEX_OFFICE</v8:MatchLocationTypes>
+            <v8:MatchLocationId>10</v8:MatchLocationId>
+            <v8:MatchConditions>MATCH_BY_EXACT_POSTAL_CODE</v8:MatchConditions>
+            <v8:ResultsToSkip>0</v8:ResultsToSkip>
+            <v8:ResultsRequested>15</v8:ResultsRequested>
+            <v8:ResultConditions>INCLUDE_POSTAL_CODES</v8:ResultConditions>
+         </v8:MatchAndResultCriteria>
+      </v8:GetAvailablePostalsRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <GetAvailablePostalsReply xmlns="http://fedex.com/ws/cnty/v8">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>cnty</Source>
+            <Code>000</Code>
+            <Message>SUCCESS</Message>
+            <LocalizedMessage>SUCCESS</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>123312</CustomerTransactionId>
+            <Localization>
+               <LanguageCode>EN</LanguageCode>
+               <LocaleCode>en</LocaleCode>
+            </Localization>
+            <Tracing>false</Tracing>
+            <SourceFormat>API_XML</SourceFormat>
+            <Environment>TEST</Environment>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>cnty</ServiceId>
+            <Major>8</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <TotalResults>1</TotalResults>
+         <ResultsReturned>1</ResultsReturned>
+         <MatchedPostals>
+            <PostalRange>
+               <StartPostalCode>50200</StartPostalCode>
+            </PostalRange>
+            <Cities>
+               <Address>
+                  <City>TOLUCA</City>
+                  <StateOrProvinceCode>EM</StateOrProvinceCode>
+                  <CountryCode>MX</CountryCode>
+                  <Residential>false</Residential>
+               </Address>
+               <IsPrimary>true</IsPrimary>
+            </Cities>
+            <LocationServiceDetails>
+               <LocationId>TLCA</LocationId>
+               <ExpressServiceCategories>
+                  <ServiceCategory>EXPRESS_PARCEL</ServiceCategory>
+               </ExpressServiceCategories>
+               <ExpressServiceCategories>
+                  <ServiceCategory>EXPRESS_FREIGHT</ServiceCategory>
+               </ExpressServiceCategories>
+            </LocationServiceDetails>
+         </MatchedPostals>
+      </GetAvailablePostalsReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

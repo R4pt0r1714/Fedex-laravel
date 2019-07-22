@@ -1,0 +1,71 @@
+Search Location by Phone Number
+
+Request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v9="http://fedex.com/ws/locs/v9">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v9:SearchLocationsRequest>
+         <v9:WebAuthenticationDetail>
+            <v9:ParentCredential>
+               <v9:Key>INPUT YOUR INFORMATION</v9:Key>
+               <v9:Password>INPUT YOUR INFORMATION</v9:Password>
+            </v9:ParentCredential>
+            <v9:UserCredential>
+               <v9:Key>INPUT YOUR INFORMATION</v9:Key>
+               <v9:Password>INPUT YOUR INFORMATION</v9:Password>
+            </v9:UserCredential>
+         </v9:WebAuthenticationDetail>
+         <v9:ClientDetail>
+            <v9:AccountNumber>INPUT YOUR INFORMATION</v9:AccountNumber>
+            <v9:MeterNumber>INPUT YOUR INFORMATION</v9:MeterNumber>
+            <v9:Region>US</v9:Region>
+         </v9:ClientDetail>
+         <v9:Version>
+            <v9:ServiceId>locs</v9:ServiceId>
+            <v9:Major>9</v9:Major>
+            <v9:Intermediate>0</v9:Intermediate>
+            <v9:Minor>0</v9:Minor>
+         </v9:Version>
+         <v9:LocationsSearchCriterion>PHONE_NUMBER</v9:LocationsSearchCriterion>
+         <v9:Address>
+            <v9:StreetLines>INPUT YOUR INFORMATION</v9:StreetLines>
+            <v9:City>Memphis</v9:City>
+            <v9:StateOrProvinceCode>TN</v9:StateOrProvinceCode>
+            <v9:PostalCode>38125</v9:PostalCode>
+            <v9:CountryCode>US</v9:CountryCode>
+            <v9:Residential>0</v9:Residential>
+            <v9:GeographicCoordinates>sciret dare</v9:GeographicCoordinates>
+         </v9:Address>
+         <v9:PhoneNumber>INPUT YOUR INFORMATION</v9:PhoneNumber>
+         <v9:MultipleMatchesAction>RETURN_ALL</v9:MultipleMatchesAction>
+      </v9:SearchLocationsRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+Response:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <SearchLocationsReply xmlns="http://fedex.com/ws/locs/v9">
+         <HighestSeverity>ERROR</HighestSeverity>
+         <Notifications>
+            <Severity>ERROR</Severity>
+            <Source>locs</Source>
+            <Code>006</Code>
+            <Message>No result returned.</Message>
+            <LocalizedMessage>No result returned.</LocalizedMessage>
+         </Notifications>
+         <Version>
+            <ServiceId>locs</ServiceId>
+            <Major>9</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <TotalResultsAvailable>0</TotalResultsAvailable>
+         <ResultsReturned>0</ResultsReturned>
+      </SearchLocationsReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,192 @@
+Create Pickup  FR (LTL) - USREQUEST:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v17="http://fedex.com/ws/pickup/v17">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <v17:CreatePickupRequest>
+        <v17:WebAuthenticationDetail>
+            <v17:ParentCredential>
+               <v17:Key>INPUT YOUR INFORMATION</v17:Key>
+               <v17:Password>INPUT YOUR INFORMATION</v17:Password>
+            </v17:ParentCredential>
+            <v17:UserCredential>
+               <v17:Key>INPUT YOUR INFORMATION</v17:Key>
+               <v17:Password>INPUT YOUR INFORMATION</v17:Password>
+            </v17:UserCredential>
+         </v17:WebAuthenticationDetail>
+         <v17:ClientDetail>
+            <v17:AccountNumber>INPUT YOUR INFORMATION</v17:AccountNumber>
+            <v17:MeterNumber>INPUT YOUR INFORMATION</v17:MeterNumber>
+         </v17:ClientDetail>
+         <v17:TransactionDetail>
+            <v17:CustomerTransactionId>v17 CreatePickup Freight_FFE</v17:CustomerTransactionId>
+         </v17:TransactionDetail>
+         <v17:Version>
+            <v17:ServiceId>disp</v17:ServiceId>
+            <v17:Major>17</v17:Major>
+            <v17:Intermediate>0</v17:Intermediate>
+            <v17:Minor>0</v17:Minor>
+         </v17:Version>
+         <v17:OriginDetail>
+            <v17:UseAccountAddress>0</v17:UseAccountAddress>
+            <v17:PickupLocation>
+               <v17:Contact>
+                  <v17:PersonName>INPUT YOUR INFORMATION</v17:PersonName>
+                  <v17:CompanyName>ANDERSON MERCHANDISERS</v17:CompanyName>
+                  <v17:PhoneNumber>INPUT YOUR INFORMATION</v17:PhoneNumber>
+                  <v17:EMailAddress>NAVARROJ@AMERCH.COM</v17:EMailAddress>
+               </v17:Contact>
+               <v17:Address>
+                  <v17:StreetLines>INPUT YOUR INFORMATION</v17:StreetLines>
+                  <v17:City>HARRISON</v17:City>
+                  <v17:StateOrProvinceCode>AR</v17:StateOrProvinceCode>
+                  <v17:PostalCode>72601</v17:PostalCode>
+                  <v17:CountryCode>US</v17:CountryCode>
+               </v17:Address>
+            </v17:PickupLocation>
+            <v17:PackageLocation>FRONT</v17:PackageLocation>
+            <v17:BuildingPart>APARTMENT</v17:BuildingPart>
+            <v17:BuildingPartDescription>BuildingPartDescription</v17:BuildingPartDescription>
+            <v17:ReadyTimestamp>${= String.format('%tF', new Date() )}T09:30:47-05:00</v17:ReadyTimestamp>
+            <v17:CompanyCloseTime>17:00:00</v17:CompanyCloseTime>
+         </v17:OriginDetail>
+         <v17:FreightPickupDetail>
+            <v17:ApprovedBy>
+               <v17:PersonName>INPUT YOUR INFORMATION</v17:PersonName>
+               <v17:CompanyName>FedEx-WAPI</v17:CompanyName>
+               <v17:PhoneNumber>INPUT YOUR INFORMATION</v17:PhoneNumber>
+               <v17:EMailAddress>pritpal_sahani@syntelinc.com</v17:EMailAddress>
+            </v17:ApprovedBy>
+            <v17:Payment>SENDER</v17:Payment>
+            <v17:Role>SHIPPER</v17:Role>
+            <v17:SubmittedBy>
+               <v17:PersonName>INPUT YOUR INFORMATION</v17:PersonName>
+               <v17:CompanyName>ANDERSON MERCHANDISERS</v17:CompanyName>
+               <v17:PhoneNumber>INPUT YOUR INFORMATION</v17:PhoneNumber>
+               <v17:EMailAddress>NAVARROJ@AMERCH.COM</v17:EMailAddress>
+            </v17:SubmittedBy>
+            <v17:LineItems>
+               <v17:Service>FEDEX_FREIGHT_ECONOMY</v17:Service>
+               <v17:SequenceNumber>1</v17:SequenceNumber>
+               <v17:Destination>
+                  <v17:StreetLines>INPUT YOUR INFORMATION</v17:StreetLines>
+                  <v17:City>HARRISON</v17:City>
+                  <v17:StateOrProvinceCode>AR</v17:StateOrProvinceCode>
+                  <v17:PostalCode>72601</v17:PostalCode>
+                  <v17:CountryCode>US</v17:CountryCode>
+               </v17:Destination>
+               <v17:Packaging>BUNDLE</v17:Packaging>
+               <v17:Pieces>4</v17:Pieces>
+               <v17:Weight>
+                  <v17:Units>LB</v17:Units>
+                  <v17:Value>145.0</v17:Value>
+               </v17:Weight>
+               <v17:TotalHandlingUnits>2</v17:TotalHandlingUnits>
+               <v17:JustOneMore>1</v17:JustOneMore>
+               <v17:Description>String</v17:Description>
+            </v17:LineItems>
+         </v17:FreightPickupDetail>
+         <v17:PackageCount>4</v17:PackageCount>
+         <v17:TotalWeight>
+            <v17:Units>LB</v17:Units>
+            <v17:Value>145.0</v17:Value>
+         </v17:TotalWeight>
+         <v17:CarrierCode>FXFR</v17:CarrierCode>
+         <v17:OversizePackageCount>1</v17:OversizePackageCount>
+         <v17:Remarks>Preet</v17:Remarks>
+         <v17:CommodityDescription>Freight</v17:CommodityDescription>
+      </v17:CreatePickupRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+
+
+
+RESPONSE:
+
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header/>
+   <SOAP-ENV:Body>
+      <CreatePickupReply xmlns="http://fedex.com/ws/pickup/v17">
+         <HighestSeverity>SUCCESS</HighestSeverity>
+         <Notifications>
+            <Severity>SUCCESS</Severity>
+            <Source>disp</Source>
+            <Code>0000</Code>
+            <Message>Success</Message>
+            <LocalizedMessage>Success</LocalizedMessage>
+         </Notifications>
+         <TransactionDetail>
+            <CustomerTransactionId>v17 CreatePickup Freight_FFE</CustomerTransactionId>
+         </TransactionDetail>
+         <Version>
+            <ServiceId>disp</ServiceId>
+            <Major>17</Major>
+            <Intermediate>0</Intermediate>
+            <Minor>0</Minor>
+         </Version>
+         <PickupConfirmationNumber>INPUT YOUR INFORMATION</PickupConfirmationNumber>
+         <CompletedFreightPickupDetail>
+            <Origin>
+               <AdditionalDays>0</AdditionalDays>
+               <LocalDistance>
+                  <Value>2.0</Value>
+                  <Units>MI</Units>
+               </LocalDistance>
+               <LocalDuration>PT3M</LocalDuration>
+               <Location>HRO</Location>
+               <ContactAndAddress>
+                  <Contact>
+                     <PersonName>FRED GARRY</PersonName>
+                     <CompanyName>HARRISON</CompanyName>
+                     <PhoneNumber>8707417227</PhoneNumber>
+                     <FaxNumber>8707417325</FaxNumber>
+                  </Contact>
+                  <Address>
+                     <StreetLines>2200 FORWARD DR</StreetLines>
+                     <City>HARRISON</City>
+                     <StateOrProvinceCode>AR</StateOrProvinceCode>
+                     <PostalCode>72601-2004</PostalCode>
+                     <CountryCode>US</CountryCode>
+                     <Residential>false</Residential>
+                  </Address>
+               </ContactAndAddress>
+            </Origin>
+            <LineItems>
+               <SequenceNumber>1</SequenceNumber>
+               <Destination>
+                  <InterlineCarrierCode>FEDEX_FREIGHT_ECONOMY</InterlineCarrierCode>
+                  <InterlineCarrierName>FedEx Freight</InterlineCarrierName>
+                  <AdditionalDays>0</AdditionalDays>
+                  <LocalService>FEDEX_FREIGHT_ECONOMY</LocalService>
+                  <LocalDistance>
+                     <Value>2.0</Value>
+                     <Units>MI</Units>
+                  </LocalDistance>
+                  <LocalDuration>PT3M</LocalDuration>
+                  <LocalServiceScheduling>STANDARD</LocalServiceScheduling>
+                  <Location>HRO</Location>
+                  <ContactAndAddress>
+                     <Address>
+                        <StreetLines>2200 FORWARD DRIVE</StreetLines>
+                        <City>HARRISON</City>
+                        <StateOrProvinceCode>AR</StateOrProvinceCode>
+                        <PostalCode>72601</PostalCode>
+                        <CountryCode>US</CountryCode>
+                        <Residential>false</Residential>
+                     </Address>
+                  </ContactAndAddress>
+               </Destination>
+               <TotalTravelTime>P2D</TotalTravelTime>
+               <EtaDeliveryTimestamp>2017-12-15T00:00:00</EtaDeliveryTimestamp>
+            </LineItems>
+            <TotalPieces>4</TotalPieces>
+            <TotalWeight>
+               <Units>LB</Units>
+               <Value>145.0</Value>
+            </TotalWeight>
+            <TotalHandlingUnits>2</TotalHandlingUnits>
+         </CompletedFreightPickupDetail>
+      </CreatePickupReply>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
