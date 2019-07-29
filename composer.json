@@ -9,5 +9,10 @@
             "email": "javer.vazquez@web-oons.com.mx"
         }
     ],
-    "require": {}
+    "require": {
+        "php": ">=7.1",
+        "illuminate/support": "5.7.x|5.8.x"
+    },
+
+    "minimum-stability": "dev"
 }
