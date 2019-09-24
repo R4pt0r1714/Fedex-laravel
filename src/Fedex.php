@@ -6,13 +6,13 @@ class Fedex {
 
   private $client;
 
-  public static function getServiceClient(string $service){
+  public static function GetServiceClient(string $service){
       $wsdl = $this.getServiceWSDL($service);
 
       $client = new FedexClient($wsdl);
       return $client;
   }
-  
+
 
   private function getServiceWSDL(string $service){
 
