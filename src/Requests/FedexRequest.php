@@ -2,6 +2,8 @@
 
 namespace R4pt0r1714\Fedex\Requests;
 
+use R4pt0r1714\Fedex\Components\FedexConfiguration;
+
 abstract class FedexRequest{
 
     protected $request;
@@ -11,15 +13,15 @@ abstract class FedexRequest{
     protected $acNumber;
     protected $meterNumber;
 
-    public function __construct($key, $password, $acNumber, $meterNumber, $countryCode)
+    public function __construct(FedexConfiguration $config)
     {
         $this->request = array();
 
-        $this->key = $key;
-        $this->password = $password;
-        $this->acNumber = $acNumber;
-        $this->meterNumber = $meterNumber;
-        $this->countryCode = $countryCode;
+        $this->key = $config->get_key();
+        $this->password = $config->get_password();
+        $this->acNumber = $config->get_acNumber();
+        $this->meterNumber = $config->get_meterNumber();
+        $this->countryCode = $config->get_countryCode();
 
         $this->initializeRequest();
     }

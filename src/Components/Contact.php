@@ -1,6 +1,6 @@
 <?php
 
-namespace R4pt0r1714\Feder\Components;
+namespace R4pt0r1714\Fedex\Components;
 
 class Contact {
 

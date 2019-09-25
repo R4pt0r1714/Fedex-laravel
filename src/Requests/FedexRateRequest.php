@@ -11,9 +11,9 @@ class FedexRateRequest extends FedexRequest{
     protected $recipient;
     protected $packageNumber;
 
-    public function __construct($key, $password, $acNumber, $meterNumber, $countryCode){
+    public function __construct(FedexConfiguration $config){
 
-        parent::__construct($key, $password, $acNumber, $meterNumber, $countryCode);
+        parent::__construct($config);
 
         $this->configVersionRequest();
         $this->configPayment();
@@ -79,6 +79,8 @@ class FedexRateRequest extends FedexRequest{
                 ['RequestedPackageLineItems'][$this->packageNumber] = $package->getPackageArray();
 
         $this->packageNumber +=1;
+
+        $this->setValue('PackageCount', $this->packageNumber);
 
         return $this->packageNumber - 1;
     }
